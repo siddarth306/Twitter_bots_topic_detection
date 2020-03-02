@@ -3,6 +3,11 @@ from tqdm import tqdm
 
 def calculate_topics_by_hashtags(hashtags, hashtags_phrases, minPoints, epsilon):
 
+    if len(hashtags) < 500:
+        minPoints = 1
+    else:
+        minPoints=2
+
     hashtags_adj_list = defaultdict(set)
     print("\t- Calculating Neighbors")
     for idx, (ht1,_) in tqdm(enumerate(hashtags)):

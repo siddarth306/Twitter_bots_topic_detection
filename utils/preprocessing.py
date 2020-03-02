@@ -77,6 +77,11 @@ def calc_phrases(row):
         if each[0] > 3.0:
             phrases.add(each[1])
 
+    if len(phrases) == 0:
+        for each in ranked_phrases:
+            if each[0] > 1.0:
+                phrases.add(each[1])
+
     return phrases
 
 def hashtag_type(hashtags, nhashtags):
@@ -150,7 +155,7 @@ def calc_hashtags_freq(row, hashtags_freq):
     return hashtag_freq_count
 
 
-def topic_preprocessing(df):
+def topic_preprocessing(df, technique=True):
     phrases_freq = defaultdict(int)
     phrases_htgs = defaultdict(set)
     phrases_shares = defaultdict(int)
@@ -168,6 +173,8 @@ def topic_preprocessing(df):
             phrases_freq[phrase] += 1
             phrases_shares[phrase] += row["share_count"]
             phrases_likes[phrase] += row["likes_count"]
+            if not (type(row["tid"]) == str or type(row["tid"]) == float or type(row["tid"]) == int):
+                import pdb; pdb.set_trace()
             phrases_tweets[phrase].add(row["tid"])
             if type(row["hashtags"]) == str:
                 hashtags_str = row["hashtags"].replace("'", '"')
@@ -190,7 +197,7 @@ def topic_preprocessing(df):
                         hashtags_tweets[hash_t].add(row["tid"])
                         hashtags_shares[hash_t] += row["share_count"]
                         hashtags_likes[hash_t] += row["likes_count"]
-            if "nhashtag" in df.columns and type(row["nhashtag"]) == set and len(row["nhashtag"]) > 0:
+            if technique and "nhashtag" in df.columns and type(row["nhashtag"]) == set and len(row["nhashtag"]) > 0:
                 for hash_t in row["nhashtag"]:
                     phrases_htgs[phrase].add(hash_t)
                     hashtags_freq[hash_t] += 1
@@ -220,9 +227,9 @@ def topic_preprocessing(df):
     }
     return preprocessed_data
 
-def assign_country_tweets(tweet_text, nphrases, phrases_country, phrases_hashtag, eu_countries):
+def assign_country_tweets(tweet_text, nphrases, phrases_country, phrases_country_freq, phrases_hashtag, eu_countries):
     hashtags =  set()
-    countries = set()
+    countries = defaultdict(int)
     text = tweet_text.lower().strip()
     for ph in nphrases:
         ph_pos = text.find(ph)
@@ -231,28 +238,41 @@ def assign_country_tweets(tweet_text, nphrases, phrases_country, phrases_hashtag
                 hashtags.add(phrases_hashtag[ph])
             if phrases_country.get(ph, None) is not None:
                 if phrases_country[ph] == "eu":
-                    countries.update(eu_countries)
+                    for ctry in eu_countries:
+                        countries[ctry] += phrases_country_freq[ph]
                 else:
-                    countries.add(phrases_country[ph])
+                    countries[phrases_country[ph]] += phrases_country_freq[ph]
 
     if len(hashtags) == 0:
         hashtags = None
     if len(countries) == 0:
-        countries = None
-    return [countries, hashtags]
+        final_country = None
+    else:
+        final_country = set()
+        country_freq_max = 0
+        for key, val in countries.items():
+            if val > country_freq_max:
+                val = country_freq_max
+                final_country = set([key])
+            elif val == country_freq_max:
+                final_country.add(key)
+    return [final_country, hashtags]
 
 
 
-def tweets_cleaning(data_df, nphrases, phrases_country, phrases_hashtag, eu_countries, nmatching=True):
+def tweets_cleaning(data_df, nphrases, phrases_country, phrases_country_freq, phrases_hashtag, eu_countries, nmatching=True):
 
-    data_df["tweet_check"] = data_df.progress_apply(valid_tweets, axis=1)
+    try:
+        data_df["tweet_check"] = data_df.progress_apply(valid_tweets, axis=1)
+    except ValueError:
+        import pdb; pdb.set_trace()
     data_df = data_df[data_df["tweet_check"]]
     data_df["share_count"] = data_df.apply(calc_shares, axis=1)
     data_df["likes_count"] = data_df.apply(calc_likes, axis=1)
     data_df["cleaned_text"] = data_df.progress_apply(beautify_tweet, axis=1)
     data_df["phrases"] = data_df.progress_apply(calc_phrases, axis=1)
     if nmatching:
-        data_df[["ncountry","nhashtag"]] = data_df.apply(lambda row: pd.Series(assign_country_tweets(row["cleaned_text"], nphrases, phrases_country, phrases_hashtag, eu_countries)), axis=1)
+        data_df[["ncountry","nhashtag"]] = data_df.apply(lambda row: pd.Series(assign_country_tweets(row["cleaned_text"], nphrases, phrases_country, phrases_country_freq, phrases_hashtag, eu_countries)), axis=1)
         data_df_htgs = data_df.progress_apply(lambda row: hashtag_type(row["hashtags"], row["nhashtag"]), axis=1)
     else:
         data_df_htgs = data_df.progress_apply(lambda row: hashtag_type(row["hashtags"], None), axis=1)
