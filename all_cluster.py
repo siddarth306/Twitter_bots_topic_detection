@@ -30,7 +30,7 @@ country_map = {"czech.csv": "cs",
 }
 eu_countries = set(["czech", "denmark", "estonia", "finland", "france", "hungary", "netherlands", "norway", "sweden"])
 only_en_countries = set(["uk","usa"])
-all_countries = list(only_en_countries) + list(eu_countries)
+all_countries = list(only_en_countries) + list(eu_countries) + ["eu"]
 
 def hashtag_filter(hashtag):
     return True if type(hashtag) == str else False
@@ -38,16 +38,23 @@ def hashtag_filter(hashtag):
 
 def get_preprocessed_data(tool_config):
     data_df = pd.DataFrame()
-    all_country_dfs = {}
-    all_country_non_en_dfs = {}
+    non_en_data_df = pd.DataFrame()
+    all_country_en_dfs = {}
+    all_langs_non_en_dfs = {}
 
     phrases_country = {}
     phrases_country_freq = {}
     phrases_hashtag = {}
     nphrases = []
     country_filename = "country-coded-nouns.csv"
+    coded_countries_filename = "coded_countries.csv"
     country_phrases_df = pd.read_csv(tool_config["input_out_file_loc"].format(country_filename))
+    coded_country_df = pd.read_csv(tool_config["input_out_file_loc"].format(coded_countries_filename))
     
+    coded_country_dict = {}
+    for idx, row in coded_country_df.iterrows():
+        coded_country_dict["Phrase"] = row["Country"]
+
     for idx, row in country_phrases_df.iterrows():
         nphrases.append(row["Phrase"])
         if type(row["Country"]) == str and len(row["Country"]) > 0:
@@ -58,25 +65,46 @@ def get_preprocessed_data(tool_config):
 
     #nphrases.sort(key= lambda x: x[1], reverse=True)
 
+    
     print("Preprocessing tweets")
     for file_n in [*country_map.keys()]:
         print("Processing " + file_n)
-        country_df = pd.read_csv(tool_config["input_file_loc"].format( file_n))
+        country_df = pd.read_csv(tool_config["input_file_loc"].format(file_n))
+        
         if country_map2[file_n] not in only_en_countries:
             country_non_en_df = country_df[country_df["language"] != "en"]
             if len(country_non_en_df.index) > 0:
-                country_non_en_df = preprocessing.tweets_cleaning(country_non_en_df, nphrases, phrases_country, phrases_country_freq, phrases_hashtag, eu_countries, False)
-                all_country_non_en_dfs[country_map2[file_n]] = country_non_en_df
+                country_non_en_df = preprocessing.tweets_cleaning(country_non_en_df,
+                                                                  nphrases,
+                                                                  phrases_country,
+                                                                  phrases_country_freq,
+                                                                  phrases_hashtag,
+                                                                  eu_countries,
+                                                                  coded_country_dict, False)
+                non_en_data_df = non_en_data_df.append(country_non_en_df, ignore_index = True)
+
         country_df = country_df[country_df["language"]=="en"]
         if len(country_df.index) > 0:
-            country_df = preprocessing.tweets_cleaning(country_df, nphrases, phrases_country, phrases_country_freq, phrases_hashtag, eu_countries)
+            country_df = preprocessing.tweets_cleaning(country_df,
+                                                       nphrases,
+                                                       phrases_country,
+                                                       phrases_country_freq,
+                                                       phrases_hashtag,
+                                                       eu_countries,
+                                                       coded_country_dict)
             data_df = data_df.append(country_df, ignore_index = True)
             country_df = country_df[country_df.apply(lambda row: hashtag_filter(row["hashtags"]), axis=1)]
-            all_country_dfs[country_map2[file_n]] = country_df
+
+    for ct in list(only_en_countries) + ["eu"]:
+        all_country_en_dfs[ct] = data_df[data_df["ncountry"] == ct]
+
+    languages = list(non_en_data_df["language"].unique())
+    for lang in languages:
+        all_langs_non_en_dfs[lang] = non_en_data_df[non_en_data_df["language"] == lang]
 
     #preprocessed_data = preprocessing.topic_preprocessing(data_df)
 
-    return data_df, all_country_dfs, all_country_non_en_dfs
+    return all_country_en_dfs, all_langs_non_en_dfs
 
 def remove_wrong_country_tweets(tid, country_tids, all_tids):
     if tid not in country_tids and tid in all_tids:
@@ -190,108 +218,66 @@ def calculate_clusters(tool_config):
     filename = tool_config["week_str"] + "_all_tweets_preprocessing.pkl"
     try:
         with open(tool_config["inter_file_loc"].format(filename), "rb") as f1:
-            data_df, all_country_dfs, all_country_non_en_dfs = pickle.load(f1)
+            all_country_en_dfs, all_langs_non_en_dfs = pickle.load(f1)
         print("Using tweets intermediate file")
 
     except FileNotFoundError:
-        data_df, all_country_dfs, all_country_non_en_dfs = get_preprocessed_data(tool_config)
+        all_country_en_dfs, all_langs_non_en_dfs = get_preprocessed_data(tool_config)
         with open(tool_config["inter_file_loc"].format(filename), "wb") as f1:
-            pickle.dump((data_df, all_country_dfs, all_country_non_en_dfs), f1)
+            pickle.dump((all_country_en_dfs, all_langs_non_en_dfs), f1)
 
     topic_filename = tool_config["week_str"] +"_topic_preprocessing.pkl"
+    
     try:
         with open(tool_config["inter_file_loc"].format(topic_filename), "rb") as f1:
-            country_topic_preprocessed, country_non_en_topic_preprocessed, country_dfs_processed, all_country_non_en_dfs, country_topic_preprocessed_t2, country_dfs_processed_t2 = pickle.load(f1)
+            country_topic_en_preprocessed, lang_topic_non_en_preprocessed = pickle.load(f1)
         print("Using topic intermediate file")
     except FileNotFoundError:
         country_tweets = defaultdict(list)
         all_tweets = []
+        country_topic_en_preprocessed = {}
+        lang_topic_non_en_preprocessed = {}
 
-        for idx, row in data_df.iterrows():
-            if row["ncountry"] is not None:
-            #if row["ncountry"] is not None and \
-            #    not (len(row["ncountry"].intersection(eu_countries)) > 0 and len(row["ncountry"].intersection(only_en_countries)) > 0) and not ("usa" in row["ncountry"] and "uk" in row["ncountry"]):
-                for ct in row["ncountry"]:
-                    country_tweets[ct].append(row["tid"])
-                    all_tweets.append(row["tid"])
+        for key, df in all_country_en_dfs.items():
+            preprocessing_dict = preprocessing.topic_preprocessing(df)
+            if len(preprocessing_dict) > 0:
+                country_topic_en_preprocessed[key] = preprocessing_dict
 
-        country_topic_preprocessed = {}
-        country_topic_preprocessed_t2 = {}
-        country_non_en_topic_preprocessed = {}
-        
-        import pdb; pdb.set_trace()
-        country_dfs_processed = {}
-        country_dfs_processed_t2 = {}
-        usa_df = data_df.loc[data_df["tid"].isin(country_tweets["usa"])]
-        country_dfs_processed["usa"] = usa_df
-        country_topic_preprocessed["usa"] = preprocessing.topic_preprocessing(usa_df)
-        country_dfs_processed_t2["usa"] = usa_df[usa_df.apply(lambda row: hashtag_filter(row["hashtags"]), axis=1)]
-        country_topic_preprocessed_t2["usa"] = preprocessing.topic_preprocessing(country_dfs_processed_t2["usa"], False)
-        all_tweets = set(all_tweets)
-        for file_n in [*country_map.keys()]:
-            if country_tweets.get(country_map2[file_n], None) is not None:
+        for key, df in all_langs_non_en_dfs.items():
+            preprocessing_dict = preprocessing.topic_preprocessing(df)
+            if len(preprocessing_dict) > 0:
+                lang_topic_non_en_preprocessed[key] = preprocessing_dict
 
-                additional_tids = country_tweets[country_map2[file_n]]
-                additional_tweets = data_df.loc[data_df["tid"].isin(additional_tids)]
-                c_df = all_country_dfs[country_map2[file_n]]
-                combined_c_df = pd.concat([c_df,additional_tweets])
-                combined_c_df.drop_duplicates(subset="tid", inplace=True, keep="last")
-                ct_tweets_set = set(country_tweets[country_map2[file_n]])
-                combined_c_df["valid_tweets"] = combined_c_df.apply(lambda row: remove_wrong_country_tweets(row["tid"], ct_tweets_set, all_tweets), axis=1)
-                new_c_df = combined_c_df[combined_c_df["valid_tweets"]]
-
-                country_dfs_processed_t2[country_map2[file_n]] = new_c_df[new_c_df.apply(lambda row: hashtag_filter(row["hashtags"]), axis=1)]
-                country_dfs_processed[country_map2[file_n]] = new_c_df
-
-                preprocess_dict = preprocessing.topic_preprocessing(new_c_df)
-                preprocess_dict_t2 = preprocessing.topic_preprocessing(country_dfs_processed_t2[country_map2[file_n]], False)
-                if len(preprocess_dict["phrases"]) != 0:   
-                    country_topic_preprocessed[country_map2[file_n]] = preprocess_dict
-                if len(preprocess_dict_t2["phrases"]) != 0:   
-                    country_topic_preprocessed_t2[country_map2[file_n]] = preprocess_dict_t2
-            if all_country_non_en_dfs.get(country_map2[file_n], None) is not None:
-                if country_map2[file_n] not in only_en_countries: 
-                    preprocess_dict = preprocessing.topic_preprocessing(all_country_non_en_dfs[country_map2[file_n]])
-                    if len(preprocess_dict["phrases"]) != 0:   
-                        country_non_en_topic_preprocessed[country_map2[file_n]] = preprocess_dict
         with open(tool_config["inter_file_loc"].format(topic_filename), "wb") as f1:
-            pickle.dump((country_topic_preprocessed, country_non_en_topic_preprocessed, country_dfs_processed, all_country_non_en_dfs, country_topic_preprocessed_t2, country_dfs_processed_t2), f1)
-    import pdb; pdb.set_trace()
+            pickle.dump((country_topic_en_preprocessed, lang_topic_non_en_preprocessed), f1)
     clusters = {}
-    clusters_t2 = {}
     non_en_clusters = {}
-    clusters["usa"] = clustering.calculate_topics_by_hashtags(country_topic_preprocessed["usa"]["hashtags"],
-                                                              country_topic_preprocessed["usa"]["hashtags_phrases"], 
-                                                              tool_config["minPoints"], tool_config["epsilon"])
-    clusters_t2["usa"] = clustering.calculate_topics_by_hashtags(country_topic_preprocessed_t2["usa"]["hashtags"],
-                                                              country_topic_preprocessed_t2["usa"]["hashtags_phrases"], 
-                                                              tool_config["minPoints"], tool_config["epsilon"])
-    save_hashtag_clusters(clusters["usa"], country_topic_preprocessed["usa"], country_dfs_processed["usa"], True, tool_config, "usa")
-    save_hashtag_clusters(clusters_t2["usa"], country_topic_preprocessed_t2["usa"], country_dfs_processed_t2["usa"], True, tool_config, "usa_t2")
-    for file_n in [*country_map.keys()]:
 
-        if country_map2[file_n] not in only_en_countries and country_non_en_topic_preprocessed.get(country_map2[file_n], None) is not None:
-            non_en_clusters[country_map2[file_n]] = clustering.calculate_topics_by_hashtags(country_non_en_topic_preprocessed[country_map2[file_n]]["hashtags"],
-                                                                                 country_non_en_topic_preprocessed[country_map2[file_n]]["hashtags_phrases"],
-                                                                                 tool_config["minPoints"], tool_config["epsilon"])
-            save_hashtag_clusters(non_en_clusters[country_map2[file_n]], country_non_en_topic_preprocessed[country_map2[file_n]], all_country_non_en_dfs[country_map2[file_n]], False, tool_config, country_map2[file_n])
-        if country_topic_preprocessed.get(country_map2[file_n], None) is not None:
-            clusters[country_map2[file_n]] = clustering.calculate_topics_by_hashtags(country_topic_preprocessed[country_map2[file_n]]["hashtags"],
-                                                                                     country_topic_preprocessed[country_map2[file_n]]["hashtags_phrases"],
-                                                                                     tool_config["minPoints"], tool_config["epsilon"])
-            save_hashtag_clusters(clusters[country_map2[file_n]], country_topic_preprocessed[country_map2[file_n]], country_dfs_processed[country_map2[file_n]], True, tool_config, country_map2[file_n])
-        if country_topic_preprocessed_t2.get(country_map2[file_n], None) is not None:
-            clusters_t2[country_map2[file_n]] = clustering.calculate_topics_by_hashtags(country_topic_preprocessed_t2[country_map2[file_n]]["hashtags"],
-                                                                                     country_topic_preprocessed_t2[country_map2[file_n]]["hashtags_phrases"],
-                                                                                     tool_config["minPoints"], tool_config["epsilon"])
-            save_hashtag_clusters(clusters_t2[country_map2[file_n]], country_topic_preprocessed_t2[country_map2[file_n]], country_dfs_processed_t2[country_map2[file_n]], True, tool_config, country_map2[file_n]+"_t2")
+    for key, topic_dict in country_topic_en_preprocessed.items():
+        clusters[key] = clustering.calculate_topics_by_hashtags(
+            topic_dict["hashtags"],
+            topic_dict["hashtags_phrases"], 
+            tool_config["minPoints"], tool_config["epsilon"])
+        save_hashtag_clusters(
+            clusters[key], 
+            topic_dict, 
+            all_country_en_dfs[key], True, tool_config, key)
 
+    for key, topic_dict in lang_topic_non_en_preprocessed.items():
+        non_en_clusters[key] = clustering.calculate_topics_by_hashtags(
+            topic_dict["hashtags"],
+            topic_dict["hashtags_phrases"], 
+            tool_config["minPoints"], tool_config["epsilon"])
+        save_hashtag_clusters(
+            non_en_clusters[key], 
+            topic_dict, 
+            all_langs_non_en_dfs[key], False, tool_config, key)
+ 
 
     with open(tool_config["inter_file_loc"].format(tool_config["week_str"] + "_clusters.pkl"), "wb") as f1:
-        pickle.dump(clusters, f1)
+        pickle.dump((clusters, non_en_clusters), f1)
 
 
 
     #clusters = clustering.calculate_topics_by_hashtags(preprocessed_data["hashtags"], preprocessed_data["hashtags_phrases"], tool_config["epsilon"], tool_config["minPoints"])
-
     return []

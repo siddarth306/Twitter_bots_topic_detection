@@ -38,6 +38,10 @@ rake_mapper = {
 }
 
 
+eu_countries = set(["czech", "denmark", "estonia", "finland", "france", "hungary", "netherlands", "norway", "sweden"])
+only_en_countries = set(["uk","usa"])
+all_countries = list(only_en_countries) + list(eu_countries) + ["eu"]
+
 def beautify_tweet(row):
     tweet_text = demoji.replace(row["tweet_text"],"")
     tweet_text = re.sub(r"(?:\@|https?\://)\S+", "", tweet_text)
@@ -227,40 +231,94 @@ def topic_preprocessing(df, technique=True):
     }
     return preprocessed_data
 
-def assign_country_tweets(tweet_text, nphrases, phrases_country, phrases_country_freq, phrases_hashtag, eu_countries):
+def find_word_in_str(strg, ph, flag=False):
+    punctuations = [".","!","?",","," "]
+    if flag:
+        punctuations.append("'s")
+    ph_list = []
+
+    ph2 = ph.replace(" ","")
+    ph_pos = strg.find(ph)
+    ph_pos2 = strg.find(ph.replace(" ",""))
+    if ph_pos != -1:
+        for ch in punctuations:
+            ph_list.append(" "+ph+ch)
+        ph_list.append("'"+ph+"'")
+        ph_list.append('"'+ph+'"')
+
+    if flag and ph_pos2 != -1  and " " in ph:
+        new_ph = ph.replace(" ", "")
+        for ch in punctuations:
+            ph_list.append(" "+new_ph+ch)
+
+
+        ph_list.append("'"+new_ph+"'")
+        ph_list.append('"'+new_ph+'"')
+
+    for ph_strg in ph_list:
+        if ph_strg in strg or \
+           ph_pos == 0 or \
+           ph_pos+len(ph) >= len(strg)-1 or \
+           ph_pos2 == 0 or \
+           ph_pos2+len(ph2) >= len(strg)-1:
+            return True
+    return False
+
+
+def assign_country_tweets(orig_tweet_text, tweet_text, nphrases, phrases_country, phrases_country_freq, phrases_hashtag, eu_countries, coded_countries):
     hashtags =  set()
     countries = defaultdict(int)
     text = tweet_text.lower().strip()
+    final_country = set()
+    orig_text = orig_tweet_text.replace("\n", " ").replace("#","").replace("@", "").lower().strip()
+    orig_text = demoji.replace(orig_text," ")
     for ph in nphrases:
         ph_pos = text.find(ph)
-        if  ph_pos != -1 and (" "+ph+" " in text or ph_pos == 0 or ph_pos+len(ph) == len(text) ):
+        orig_ph_pos = orig_text.find(ph)
+        if  find_word_in_str(text, ph) or find_word_in_str(orig_text, ph, True):
             if phrases_hashtag.get(ph, None) is not None: 
                 hashtags.add(phrases_hashtag[ph])
+
             if phrases_country.get(ph, None) is not None:
-                if phrases_country[ph] == "eu":
-                    for ctry in eu_countries:
-                        countries[ctry] += phrases_country_freq[ph]
+                if phrases_country[ph] == "eu" or phrases_country[ph] not in only_en_countries:
+                        countries["eu"] += phrases_country_freq[ph]
                 else:
                     countries[phrases_country[ph]] += phrases_country_freq[ph]
 
+    for ph, ctry in coded_countries.items():
+        ph_pos = text.find(ph)
+        orig_ph_pos = orig_text.find(ph)
+        if  find_word_in_str(text, ph) or find_word_in_str(orig_text, ph, True):
+            final_country.add(ctry)
+
     if len(hashtags) == 0:
         hashtags = None
-    if len(countries) == 0:
-        final_country = None
+    if len(countries) == 0 and len(final_country) == 0:
+        final_country = "eu"
     else:
-        final_country = set()
-        country_freq_max = 0
-        for key, val in countries.items():
-            if val > country_freq_max:
-                val = country_freq_max
-                final_country = set([key])
-            elif val == country_freq_max:
-                final_country.add(key)
+        if len(final_country) > 0:
+            if "usa" in final_country:
+                final_country = "usa"
+            elif "uk" in final_country:
+                final_country = "uk"
+            else:
+                final_country = "eu"
+        else:
+
+            country_freq_max = 0
+
+            if countries.get("usa", None) is not None:
+                final_country = "usa"
+            elif countries.get("uk", None) is not None:
+                final_country = "uk"
+            else:
+                final_country = "eu"
     return [final_country, hashtags]
 
+def valid_phrases(row):
+    return True if len(row["phrases"]) > 0 else False
 
-
-def tweets_cleaning(data_df, nphrases, phrases_country, phrases_country_freq, phrases_hashtag, eu_countries, nmatching=True):
+def tweets_cleaning(data_df, nphrases, phrases_country, phrases_country_freq, phrases_hashtag, eu_countries, coded_countries, nmatching=True):
 
     try:
         data_df["tweet_check"] = data_df.progress_apply(valid_tweets, axis=1)
@@ -271,8 +329,10 @@ def tweets_cleaning(data_df, nphrases, phrases_country, phrases_country_freq, ph
     data_df["likes_count"] = data_df.apply(calc_likes, axis=1)
     data_df["cleaned_text"] = data_df.progress_apply(beautify_tweet, axis=1)
     data_df["phrases"] = data_df.progress_apply(calc_phrases, axis=1)
+    data_df["tweet_check2"] = data_df.progress_apply(valid_phrases, axis=1)
+    data_df = data_df[data_df["tweet_check2"]]
     if nmatching:
-        data_df[["ncountry","nhashtag"]] = data_df.apply(lambda row: pd.Series(assign_country_tweets(row["cleaned_text"], nphrases, phrases_country, phrases_country_freq, phrases_hashtag, eu_countries)), axis=1)
+        data_df[["ncountry","nhashtag"]] = data_df.apply(lambda row: pd.Series(assign_country_tweets(row["tweet_text"], row["cleaned_text"], nphrases, phrases_country, phrases_country_freq, phrases_hashtag, eu_countries, coded_countries)), axis=1)
         data_df_htgs = data_df.progress_apply(lambda row: hashtag_type(row["hashtags"], row["nhashtag"]), axis=1)
     else:
         data_df_htgs = data_df.progress_apply(lambda row: hashtag_type(row["hashtags"], None), axis=1)
@@ -280,6 +340,13 @@ def tweets_cleaning(data_df, nphrases, phrases_country, phrases_country_freq, ph
 
     return data_df[data_df_htgs]
  
+def cluster_phrases(cluster, hashtag_phrases_map):
+    result = set()
+    cluster_set = set(cluster)
+    for ht in cluster_set:
+        result = result.union(hashtag_phrases_map[ht])
+
+    return result
 
 #def tweet_preprocessing(data_df):
 #    args = sys.argv

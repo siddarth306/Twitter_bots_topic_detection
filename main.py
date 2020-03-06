@@ -14,7 +14,7 @@ if __name__ == "__main__":
         week_str = "week" + str(week_no)
         tool_config = {}
         tool_config["week_str"] = week_str
-        tool_config["epsilon"] = 0.6
+        tool_config["epsilon"] = 0.5
         tool_config["minPoints"] = 2
 
         interm_file_loc = INTERM_DIR + week_str + "/"

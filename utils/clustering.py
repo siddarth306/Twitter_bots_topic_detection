@@ -3,7 +3,11 @@ from tqdm import tqdm
 
 def calculate_topics_by_hashtags(hashtags, hashtags_phrases, minPoints, epsilon):
 
-    if len(hashtags) < 500:
+    import ipdb; ipdb.set_trace()
+    if len(hashtags) < 100:
+        epsilon = 0.3
+        minPoints = 1
+    elif len(hashtags) < 500:
         minPoints = 1
     else:
         minPoints=2
