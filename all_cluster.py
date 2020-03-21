@@ -1,10 +1,15 @@
 import pickle
 import pandas as pd
-from collections import defaultdict
+from collections import defaultdict, namedtuple
 from utils import preprocessing
 from utils import clustering
 import numpy as np
 import ast
+import demoji
+from datasketch import MinHash
+import re
+import json
+import urllib.request
 
 country_map2 = {"czech.csv": "czech",
 "denmark.csv": "denmark",
@@ -46,20 +51,20 @@ def get_preprocessed_data(tool_config):
     phrases_country_freq = {}
     phrases_hashtag = {}
     nphrases = []
-    country_filename = "country-coded-nouns.csv"
+    country_filename = "country-coded-nouns-v2.csv"
     coded_countries_filename = "coded_countries.csv"
     country_phrases_df = pd.read_csv(tool_config["input_out_file_loc"].format(country_filename))
     coded_country_df = pd.read_csv(tool_config["input_out_file_loc"].format(coded_countries_filename))
     
     coded_country_dict = {}
     for idx, row in coded_country_df.iterrows():
-        coded_country_dict["Phrase"] = row["Country"]
+        coded_country_dict[row["Phrase"]] = row["Country"]
 
     for idx, row in country_phrases_df.iterrows():
         nphrases.append(row["Phrase"])
         if type(row["Country"]) == str and len(row["Country"]) > 0:
             phrases_country[row["Phrase"]] = row["Country"]
-            phrases_country_freq[row["Phrase"]] = row["Freq"]
+            phrases_country_freq[row["Phrase"]] = row["Freq"] if type(row["Freq"]) == int else int(row["Freq"].replace(",",""))
         if type(row["#hashtag"]) == str and len(row["#hashtag"]) > 0:
             phrases_hashtag[row["Phrase"]] = row["#hashtag"]
 
@@ -111,7 +116,7 @@ def remove_wrong_country_tweets(tid, country_tids, all_tids):
         return False
     return True
 
-def save_hashtag_clusters(clusters, topic_preprocessed, data_df, en, tool_config, country):
+def save_hashtag_clusters(clusters, topic_preprocessed, data_df, en, tool_config, country, urls_map, urls_set):
     prefix = "en" if en else "non_en"
     clusters_list = []
     n = 0
@@ -142,6 +147,7 @@ def save_hashtag_clusters(clusters, topic_preprocessed, data_df, en, tool_config
                 phrases.add((ph,tf_score, phrases_shares[ph], phrases_freq[ph]))
         if len(phrases) > p_limit:
 
+            
             phrases_list = list(phrases)
             phrases_list.sort(key=lambda x: (x[1], x[2], x[3]), reverse= True)
             clean_phrases = [i[0] for i in phrases_list[:10]]
@@ -149,31 +155,92 @@ def save_hashtag_clusters(clusters, topic_preprocessed, data_df, en, tool_config
                 tweet_tids = tweet_tids.union(phrases_tweets[ph[0]])
             
             tweet_df = data_df[data_df['tid'].isin(list(tweet_tids))]
-            shares = tweet_df["share_count"].sum()
+            shares = tweet_df["share_count"].sum() + len(tweet_df.index)
             likes = tweet_df["likes_count"].sum()
             bot_set = set()
-            tweet_df.sort_values(by=['likes_count', 'share_count'])
+            tweet_df = tweet_df.sort_values(by=['likes_count', 'share_count'], ascending=False)
             tweet_text = set()
             links = []
+
+            #topTweet = namedtuple('TopTweet', 'hash_obj tweet_text tid uid bot_count share_count like_count')
+            #topLink = namedtuple('TopLink', 'link bot_count share_count like_count')
+            unique_tweets_map = defaultdict(list)
+            unique_links_map = defaultdict(list)
             for idx, row in tweet_df.iterrows():
-                if len(tweet_text) < 10:
-                    tweet_text.add(row["tweet_text"])
-                if len(links) < 10 and type(row["url"]) == str:
+                text_urls = re.findall("(http|ftp|https)://([\w_-]+(?:(?:\.[\w_-]+)+))([\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])?", row["tweet_text"])
+                tweet_text = demoji.replace(row["tweet_text"],"")
+                tweet_text = re.sub(r"(https?\://)\S+", "", tweet_text)
+                tweet_text = re.sub("RT|,|[\W\d!@#$%&*:\/]*…|\*|&amp;|&gt;|&lt;", "", tweet_text)
+                tweet_text = re.sub("[\_\-\«\[\]\(\)\<\>\{\}\»\—\\\@\#\$\%\&\:\/]|[\.]+|[\!]+|[\?]+", "", tweet_text)
+                tweet_text_split = tweet_text.lower().split()
+                hash_val = MinHash()
+                for word in tweet_text_split:
+                    hash_val.update(word.encode('utf8'))
+                min_hash_val = min(hash_val.hashvalues)
+                if unique_tweets_map.get(min_hash_val, None) is None:
+                    unique_tweets_map[min_hash_val] = [None,
+                                                       row["tweet_text"],
+                                                       int(row["tid"]),
+                                                       int(row["uid"]),
+                                                       set([row["uid"]]),
+                                                       row["share_count"]+1,
+                                                       row["likes_count"]]
+                else:
+                    topTweet_obj = unique_tweets_map[min_hash_val]
+                    topTweet_obj[4].add(row["uid"])
+                    topTweet_obj[5] += row["share_count"] + 1
+                    topTweet_obj[6] += row["likes_count"]
+                    unique_tweets_map[min_hash_val] = topTweet_obj
+
+                links = []
+                if type(row["url"]) == str:
                     try:
-                        urls = ast.literal_eval(row["url"])
-                        for url in urls:
-                            if len(links) <= 10:
-                                links.append(url["expanded_url"])
+                        urls = []
+                        urls_raw = ast.literal_eval(row["url"])
+                        for url in urls_raw:
+                            urls.append(url["expanded_url"])
                     except ValueError:
                         urls = row["url"].split(",")
-                        links = links + urls
+
+                    
+                else:
+                    new_text = row["tweet_text"].rsplit(' ', 1)[0]
+                    found_urls = re.findall("https?://t\.co/\S+", new_text)
+
+                    urls = []
+                    for url_idx in range(len(found_urls)): 
+                        count = len(found_urls[url_idx])-1 
+                        while found_urls[url_idx][count] not in "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789": 
+                            count -= 1
+                            found_urls[url_idx] = found_urls[url_idx][:count+1]
+                            if urls_map.get(found_urls[url_idx], None) is not None:
+                                urls.append(urls_map[found_urls[url_idx]])
+
+                for url in urls:
+                    if unique_links_map.get(url, None) is None:
+                        unique_links_map[url] = [url, set([row["uid"]]), row["share_count"]+1, row["likes_count"]]
+                    else:
+                        topLink_obj = unique_links_map[url]
+                        topLink_obj[1].add(row["uid"])
+                        topLink_obj[2] += row["share_count"] + 1
+                        topLink_obj[3] += row["likes_count"]
+                        unique_links_map[url] = topLink_obj
 
 
-                if not np.isnan(row["uid"]):
-                    bot_set.add(int(row["uid"]))
-            links = links[:10]
+            top_tweets_list = list(unique_tweets_map.values())
+            top_tweets_list.sort(key=lambda elem: (elem[6], elem[5], len(elem[4])), reverse=True)
+            top_tweets_list = top_tweets_list[:10]
+            for tweet_idx in range(len(top_tweets_list)):
+                top_tweets_list[tweet_idx][4] = len(top_tweets_list[tweet_idx][4])
 
-            bot_count = len(bot_set)
+            top_links_list = list(unique_links_map.values())
+            top_links_list.sort(key=lambda elem: (elem[3], elem[2], len(elem[1])), reverse=True)
+            top_links_list = top_links_list[:10]
+            for tweet_idx in range(len(top_links_list)):
+                top_links_list[tweet_idx][1] = len(top_links_list[tweet_idx][1])
+
+
+            bot_count = len(tweet_df["uid"].unique())
             tweet_number = len(tweet_df.index)
             tweet_text = list(tweet_text)
 
@@ -192,7 +259,7 @@ def save_hashtag_clusters(clusters, topic_preprocessed, data_df, en, tool_config
             #max_freq_count = max(max_freq_count, bot_count)
             #min_share_count = min(min_share_count, shares)
             #min_freq_count = min(min_freq_count, bot_count)
-            clusters_list.append(["Topic " + str(n), "\n".join(clean_phrases),"\n".join(ctr), likes, shares, bot_count, tweet_number, "\n".join(tweet_text), "\n".join(links)])
+            clusters_list.append([clean_phrases,ctr, likes, shares, bot_count, tweet_number, top_tweets_list, top_links_list])
             n += 1
 
 
@@ -200,17 +267,19 @@ def save_hashtag_clusters(clusters, topic_preprocessed, data_df, en, tool_config
     #for idx, c in enumerate(non_en_clusters):
     #    if len(c) > 7:
     #        non_en_clusters_list.append(["Topic "+ str(idx), "\n".join(c[:10])])
-
+    clusters_list.sort(key=lambda elem: (elem[2],elem[3], elem[4]), reverse=True)
+    for c_idx in range(len(clusters_list)):
+        clusters_list[c_idx] = [tool_config["date"][0], tool_config["date"][1], "Topic " + str(c_idx)] + clusters_list[c_idx]
     if len(clusters_list) > 0:
         clusters_df = pd.DataFrame(clusters_list)
-        clusters_df.columns = ["Topic Number", "Keywords", "Hashtags", "Likes Count", "Shares Count", "Bot Count", "Tweets Count", "Top Tweets", "Top Links"]
+        clusters_df.columns = ["Start date", "End date", "Topic Number", "Keywords", "Hashtags", "Likes Count", "Shares Count", "Bot Count", "Tweets Count", "Top Tweets", "Top Links"]
         filename = "{}_{}_{}_topic_clusters.csv".format(tool_config["week_str"], country, prefix)
         clusters_df.to_csv(tool_config["result_file_loc"].format(filename), index=False)
-    
     #if len(non_en_clusters_list) > 0:
     #    non_en_clusters_df = pd.DataFrame(non_en_clusters_list)
     #    non_en_clusters_df.columns = ["Topic Number", "Keywords"]
     #    non_en_clusters_df.to_csv("/".join(["WeeklyData", week_str, "Results", country + "_non_en_topic_clusters.csv"]), index=False)
+    return urls_set
  
 
 def calculate_clusters(tool_config):
@@ -244,7 +313,7 @@ def calculate_clusters(tool_config):
                 country_topic_en_preprocessed[key] = preprocessing_dict
 
         for key, df in all_langs_non_en_dfs.items():
-            preprocessing_dict = preprocessing.topic_preprocessing(df)
+            preprocessing_dict = preprocessing.topic_preprocessing(df,en=False)
             if len(preprocessing_dict) > 0:
                 lang_topic_non_en_preprocessed[key] = preprocessing_dict
 
@@ -253,27 +322,47 @@ def calculate_clusters(tool_config):
     clusters = {}
     non_en_clusters = {}
 
-    for key, topic_dict in country_topic_en_preprocessed.items():
-        clusters[key] = clustering.calculate_topics_by_hashtags(
-            topic_dict["hashtags"],
-            topic_dict["hashtags_phrases"], 
-            tool_config["minPoints"], tool_config["epsilon"])
-        save_hashtag_clusters(
-            clusters[key], 
-            topic_dict, 
-            all_country_en_dfs[key], True, tool_config, key)
+    with open("./urls_map.pkl","rb") as f1:
+        urls_map = pickle.load(f1)
+    urls_set = set()
+    try:
+        with open(tool_config["inter_file_loc"].format(tool_config["week_str"] + "_clusters.pkl"), "rb") as f1:
+            clusters, non_en_clusters = pickle.load(f1)
+        for key, topic_dict in country_topic_en_preprocessed.items():
+            urls_set = save_hashtag_clusters(
+                clusters[key], 
+                topic_dict, 
+                all_country_en_dfs[key], True, tool_config, key, urls_map, urls_set)
 
-    for key, topic_dict in lang_topic_non_en_preprocessed.items():
-        non_en_clusters[key] = clustering.calculate_topics_by_hashtags(
-            topic_dict["hashtags"],
-            topic_dict["hashtags_phrases"], 
-            tool_config["minPoints"], tool_config["epsilon"])
-        save_hashtag_clusters(
-            non_en_clusters[key], 
-            topic_dict, 
-            all_langs_non_en_dfs[key], False, tool_config, key)
+        for key, topic_dict in lang_topic_non_en_preprocessed.items():
+            urls_set = save_hashtag_clusters(
+                non_en_clusters[key], 
+                topic_dict, 
+                all_langs_non_en_dfs[key], False, tool_config, key, urls_map, urls_set)
  
+    except:
+        for key, topic_dict in country_topic_en_preprocessed.items():
+            clusters[key] = clustering.calculate_topics_by_hashtags(
+                topic_dict["hashtags"],
+                topic_dict["hashtags_phrases"], 
+                tool_config["minPoints"], tool_config["epsilon"])
+            urls_set = save_hashtag_clusters(
+                clusters[key], 
+                topic_dict, 
+                all_country_en_dfs[key], True, tool_config, key, urls_map, urls_set)
 
+        for key, topic_dict in lang_topic_non_en_preprocessed.items():
+            non_en_clusters[key] = clustering.calculate_topics_by_hashtags(
+                topic_dict["hashtags"],
+                topic_dict["hashtags_phrases"], 
+                tool_config["minPoints"], tool_config["epsilon"])
+            urls_set = save_hashtag_clusters(
+                non_en_clusters[key], 
+                topic_dict, 
+                all_langs_non_en_dfs[key], False, tool_config, key, urls_map, urls_set)
+ 
+    with open(tool_config["inter_file_loc"].format(tool_config["week_str"] + "_urls_set.pkl"), "wb") as f1:
+        pickle.dump(urls_set, f1)
     with open(tool_config["inter_file_loc"].format(tool_config["week_str"] + "_clusters.pkl"), "wb") as f1:
         pickle.dump((clusters, non_en_clusters), f1)
 

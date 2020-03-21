@@ -112,12 +112,17 @@ def calculate_phrase_tf_ihf(phrase_freq, phrase_htgs):
 
 
 
-def calculate_hashtags_order(hashtags_freq):
+def calculate_hashtags_order(hashtags_freq, en=True):
 
     hash_tags = sorted(hashtags_freq.items(), key=lambda item: item[1], reverse=True)
     idx = 0
+
+    threshold = 7
+    if not en:
+        threshold = 3
+
     for ht in hash_tags:
-        if ht[1] < 7:
+        if ht[1] < threshold:
             break
         idx += 1
     print(hash_tags[0], hash_tags[-1])
@@ -159,7 +164,7 @@ def calc_hashtags_freq(row, hashtags_freq):
     return hashtag_freq_count
 
 
-def topic_preprocessing(df, technique=True):
+def topic_preprocessing(df, technique=True, en=True):
     phrases_freq = defaultdict(int)
     phrases_htgs = defaultdict(set)
     phrases_shares = defaultdict(int)
@@ -213,7 +218,7 @@ def topic_preprocessing(df, technique=True):
 
 
     phrases, phrases_tf_ihf = calculate_phrase_tf_ihf(phrases_freq, phrases_htgs) 
-    hashtags = calculate_hashtags_order(hashtags_freq)
+    hashtags = calculate_hashtags_order(hashtags_freq, en)
 
 
     preprocessed_data = {
@@ -232,7 +237,7 @@ def topic_preprocessing(df, technique=True):
     return preprocessed_data
 
 def find_word_in_str(strg, ph, flag=False):
-    punctuations = [".","!","?",","," "]
+    punctuations = [".","!","?",","," ","'",'"']
     if flag:
         punctuations.append("'s")
     ph_list = []
@@ -242,18 +247,14 @@ def find_word_in_str(strg, ph, flag=False):
     ph_pos2 = strg.find(ph.replace(" ",""))
     if ph_pos != -1:
         for ch in punctuations:
-            ph_list.append(" "+ph+ch)
-        ph_list.append("'"+ph+"'")
-        ph_list.append('"'+ph+'"')
+            for ch2 in punctuations:
+                ph_list.append(ch2+ph+ch)
 
     if flag and ph_pos2 != -1  and " " in ph:
         new_ph = ph.replace(" ", "")
         for ch in punctuations:
-            ph_list.append(" "+new_ph+ch)
-
-
-        ph_list.append("'"+new_ph+"'")
-        ph_list.append('"'+new_ph+'"')
+            for ch2 in punctuations:
+                ph_list.append(ch2+new_ph+ch)
 
     for ph_strg in ph_list:
         if ph_strg in strg or \
@@ -270,6 +271,8 @@ def assign_country_tweets(orig_tweet_text, tweet_text, nphrases, phrases_country
     countries = defaultdict(int)
     text = tweet_text.lower().strip()
     final_country = set()
+
+    orig_tweet_text = re.sub("&amp;|&gt;|&lt;"," ", orig_tweet_text)
     orig_text = orig_tweet_text.replace("\n", " ").replace("#","").replace("@", "").lower().strip()
     orig_text = demoji.replace(orig_text," ")
     for ph in nphrases:

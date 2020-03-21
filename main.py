@@ -6,7 +6,18 @@ BASE_DIR = os.getcwd()
 INPUT_DIR = BASE_DIR + "/InputData/"
 INTERM_DIR = BASE_DIR + "/IntermediateData/"
 RESULT_DIR = BASE_DIR + "/ResultData/"
-
+week_map = {
+    1: ["12/04/2019", "12/10/2019"],
+    2: ["12/11/2019", "12/17/2019"],
+    3: ["12/18/2019", "12/24/2019"],
+    4: ["01/05/2020", "01/11/2020"],
+    5: ["01/12/2020", "01/17/2020"],
+    6: ["01/18/2020", "01/24/2020"],
+    7: ["02/04/2020", "02/10/2020"],
+    8: ["02/11/2020", "02/17/2020"],
+    9: ["02/18/2020", "02/24/2020"],
+    10:["02/25/2020", "03/03/2020"],
+}
 if __name__ == "__main__":
     args = sys.argv
     if args[1] == "week_clusters":
@@ -16,6 +27,7 @@ if __name__ == "__main__":
         tool_config["week_str"] = week_str
         tool_config["epsilon"] = 0.5
         tool_config["minPoints"] = 2
+        tool_config["date"] = week_map[int(week_no)]
 
         interm_file_loc = INTERM_DIR + week_str + "/"
         input_file_loc = INPUT_DIR + week_str + "/"
