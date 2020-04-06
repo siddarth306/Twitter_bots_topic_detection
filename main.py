@@ -6,6 +6,9 @@ BASE_DIR = os.getcwd()
 INPUT_DIR = BASE_DIR + "/InputData/"
 INTERM_DIR = BASE_DIR + "/IntermediateData/"
 RESULT_DIR = BASE_DIR + "/ResultData/"
+INPUT_DIR_CORONAVIRUS = BASE_DIR + "/InputData_coronavirus/"
+INTERM_DIR_CORONAVIRUS = BASE_DIR + "/IntermediateData_coronavirus/"
+RESULT_DIR_CORONAVIRUS = BASE_DIR + "/ResultData_coronavirus/"
 week_map = {
     1: ["12/04/2019", "12/10/2019"],
     2: ["12/11/2019", "12/17/2019"],
@@ -17,6 +20,8 @@ week_map = {
     8: ["02/11/2020", "02/17/2020"],
     9: ["02/18/2020", "02/24/2020"],
     10:["02/25/2020", "03/03/2020"],
+    11:["03/03/2020", "03/10/2020"],
+    12:["03/11/2020", "03/18/2020"],
 }
 if __name__ == "__main__":
     args = sys.argv
@@ -24,6 +29,7 @@ if __name__ == "__main__":
         week_no = sys.argv[2]
         week_str = "week" + str(week_no)
         tool_config = {}
+        tool_config["week"] = int(week_no)
         tool_config["week_str"] = week_str
         tool_config["epsilon"] = 0.5
         tool_config["minPoints"] = 2
@@ -45,8 +51,33 @@ if __name__ == "__main__":
         tool_config["input_file_loc"] = input_file_loc + "{}"
         tool_config["all_lang"] = "all_countries"
         cluster_results = all_cluster.calculate_clusters(tool_config)
-    elif args[1] == "topic_linking":
-        pass
+    elif args[1] == "coronavirus":
+        week_no = sys.argv[2]
+        week_str = "week" + str(week_no)
+        tool_config = {}
+        tool_config["week"] = int(week_no)
+        tool_config["week_str"] = week_str
+        tool_config["epsilon"] = 0.5
+        tool_config["minPoints"] = 2
+        tool_config["date"] = week_map[int(week_no)]
+
+        interm_file_loc = INTERM_DIR_CORONAVIRUS + week_str + "/"
+        input_file_loc = INPUT_DIR_CORONAVIRUS + "Week{}.csv".format(week_no) 
+        result_file_loc = RESULT_DIR_CORONAVIRUS + week_str + "/"
+
+        if not os.path.exists(interm_file_loc):
+            os.makedirs(interm_file_loc)
+
+        if not os.path.exists(result_file_loc):
+            os.makedirs(result_file_loc)
+
+        tool_config["input_out_file_loc"] = INPUT_DIR + "{}"
+        tool_config["inter_file_loc"] = interm_file_loc + "{}"
+        tool_config["result_file_loc"] = result_file_loc + "{}"
+        tool_config["input_file_loc"] = input_file_loc
+        tool_config["all_lang"] = "all_countries"
+        cluster_results = all_cluster.calculate_clusters_coronavirus(tool_config)
+ 
     else:
         pass
     import pdb; pdb.set_trace()

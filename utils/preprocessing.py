@@ -42,6 +42,7 @@ eu_countries = set(["czech", "denmark", "estonia", "finland", "france", "hungary
 only_en_countries = set(["uk","usa"])
 all_countries = list(only_en_countries) + list(eu_countries) + ["eu"]
 
+
 def beautify_tweet(row):
     tweet_text = demoji.replace(row["tweet_text"],"")
     tweet_text = re.sub(r"(?:\@|https?\://)\S+", "", tweet_text)
@@ -321,7 +322,8 @@ def assign_country_tweets(orig_tweet_text, tweet_text, nphrases, phrases_country
 def valid_phrases(row):
     return True if len(row["phrases"]) > 0 else False
 
-def tweets_cleaning(data_df, nphrases, phrases_country, phrases_country_freq, phrases_hashtag, eu_countries, coded_countries, nmatching=True):
+def tweets_cleaning(data_df, nphrases, phrases_country, phrases_country_freq, 
+                    phrases_hashtag, eu_countries, coded_countries, nmatching=True):
 
     try:
         data_df["tweet_check"] = data_df.progress_apply(valid_tweets, axis=1)
@@ -342,7 +344,33 @@ def tweets_cleaning(data_df, nphrases, phrases_country, phrases_country_freq, ph
 
 
     return data_df[data_df_htgs]
- 
+
+
+def tweets_cleaning_coronavirus(data_df, nphrases, phrases_country, phrases_country_freq, 
+                                phrases_hashtag, eu_countries, coded_countries, nmatching=True):
+
+    try:
+        data_df["tweet_check"] = data_df.progress_apply(valid_tweets, axis=1)
+    except ValueError:
+        import pdb; pdb.set_trace()
+    data_df = data_df[data_df["tweet_check"]]
+    data_df["share_count"] = data_df.apply(calc_shares, axis=1)
+    data_df["likes_count"] = data_df.apply(calc_likes, axis=1)
+    data_df["cleaned_text"] = data_df.progress_apply(beautify_tweet, axis=1)
+    #data_df["phrases"] = data_df.progress_apply(calc_phrases, axis=1)
+    #data_df["tweet_check2"] = data_df.progress_apply(valid_phrases, axis=1)
+    #data_df = data_df[data_df["tweet_check2"]]
+    data_df[["ncountry","nhashtag"]] = data_df.apply(lambda row: pd.Series(assign_country_tweets(row["tweet_text"], row["cleaned_text"], nphrases, phrases_country, phrases_country_freq, phrases_hashtag, eu_countries, coded_countries)), axis=1)
+    #    data_df_htgs = data_df.progress_apply(lambda row: hashtag_type(row["hashtags"], row["nhashtag"]), axis=1)
+    #else:
+    #    data_df_htgs = data_df.progress_apply(lambda row: hashtag_type(row["hashtags"], none), axis=1)
+
+
+    return data_df
+
+
+
+
 def cluster_phrases(cluster, hashtag_phrases_map):
     result = set()
     cluster_set = set(cluster)
