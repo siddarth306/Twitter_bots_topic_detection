@@ -12,7 +12,7 @@ $ cp stopwords /home/<user>/nltk_data/corpora/
 ### Execution
 
 For running weekly reports:
-Make sure data is present in location `reports/InputData/week<week_no>/` with filename format as `week<week_no>.csv`
+Make sure data is present in location `reports/InputData/week<week_no>/` with filename format as `week_<week_no>.csv`
 
 Execute:
 ```sh
