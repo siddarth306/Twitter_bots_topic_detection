@@ -1,0 +1,59 @@
+Agenda
+- Package requirements
+	- Look at requirements.txt
+- Problem Statement
+- Dataset format, my format
+- Tool Supported Apps (report and coronavirus) and basic architecture
+- How to run them? See README.md
+- Reports
+	- Data preprocessing
+		- Clean tweet
+		- Calculate Rake phrases from clean tweet
+		- remove tweets without phrases
+		- Calculate hashtags detected using NP+NE list
+		- Calculate Share count (quotes_count + reply_count + retweet_count)
+		
+	- Topic detection preprocessing
+		- Phrase Freq 
+		- Phrase to Hashtags map
+		- Phrase to share count map
+		- Phrase to like count map
+		- Phrase to tids list map
+		- Hashtag Freq
+		- Hashtag to Phrases map
+		- Hashtag to share count map
+		- Hashtag to like count map
+		- Hashtag to tids list map
+		- Phrase list with tfihf > 1
+		- Hashtags list with hashtags freq > 7 for english and > 3 for non english
+		
+	- Topic Detection
+		- Set epsilon and minpoints values.
+			if hashtag count < 100 episilon = 0.2, minpoints = 1
+			if >= 100 hashtag count < 500 episilon = 0.5, minpoints = 1
+			else epsilon  = 0.5 min points = 2
+		- Run DBSCAN algo and calculate only core points with epsilon and min Points
+		- Run BFS on core points to get clusters
+	- Creating Top links, tweets and CSVs for report
+		- Ampilfy phrases using hashtags for each clusters
+		- Find Associated tids for each clusters
+		- Calculate stats like cluster share count, like count, bot count and tweet count
+		- Calculate Top Links and Top Tweets using Min Hash algo.
+		
+	- Topic Linking (Nitesh)
+	- Converting CSVs to JSONs for generating reports 
+		- Convert CSVs after topic linking is done into JSON so that HTML reports can be generated.
+	- Cons
+		- Expanding phrases from hashtags. We consider all phrases.
+		- Min hash algorithm for getting top tweets and top links.
+		- For non english, if the number of tweets are very less detecting topics require to have lower epsilon and min points.
+		- While running topic linking, it needs to run for all prior weeks. So computation time for topic linking will keep increasing.
+		- A better alternative to rake that supports english and all non english languages of our tweets.
+		- Week 13 onwards, the number of tweets to process for generating reports are exponentially higher. Before than a 16GB machine would suffice. Now larger servers would be needed.
+		- Look into pandarallel package that helps perform pandas dataframe tasks parallely at the cost of extra memory.
+	
+- Coronavirus
+	- Data preprocessing
+	- Topic Detection preprocessing
+	- Creating Top links, tweets and CSVs for report
+	
