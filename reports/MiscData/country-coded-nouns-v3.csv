@@ -1,0 +1,2597 @@
+Phrase,Freq,Country,#hashtag,Synonyms,UK-Gov
+prague,335,czech,czech,FP-EU,0
+denmark,1207,denmark,denmark,FP-EU,0
+greenland,297,denmark,denmark,FP-EU,0
+copenhagen,200,denmark,denmark,FP-EU,0
+estonia,369,estonia,estonia,FP-EU,0
+austria,639,eu,austria,FP-EU,0
+belgium,1063,eu,belgium,FP-EU,0
+vatican,945,eu,catholics,,0
+catholics,865,eu,catholics,,0
+euros,364,eu,economy,FP-EU,1
+euro,262,eu,economy,FP-EU,1
+eu,30347,eu,eu,FP-EU,1
+europe,9652,eu,eu,FP-EU,1
+brussels,4097,eu,eu,FP-EU,1
+europeans,320,eu,eu,FP-EU,1
+e.u.,251,eu,eu,FP-EU,1
+european,215,eu,eu,FP-EU,1
+#eu,203,eu,eu,FP-EU,1
+eu-mandated,146,eu,eu,FP-EU,0
+euro project,140,eu,eu,FP-EU,0
+albania,193,eu,fp-albania,FP-Balkans,0
+greece,1449,eu,fp-greece,FP-EU,0
+athens,289,eu,fp-greece,FP-EU,0
+kosovo,361,eu,fp-kosovo,FP-Balkans,0
+serbia,306,eu,fp-serbia,FP-Balkans,0
+germany,8038,eu,germany,FP-EU,0
+merkel,1438,eu,germany,FP-EU,0
+berlin,1273,eu,germany,FP-EU,0
+german,471,eu,germany,FP-EU,0
+deutsche,413,eu,germany,FP-EU,0
+munich,372,eu,germany,FP-EU,0
+hanau,116,eu,germany,FP-EU,0
+italy,3003,eu,italy,FP-EU,0
+rome,1085,eu,italy,FP-EU,0
+venice,287,eu,italy,FP-EU,0
+florence,218,eu,italy,FP-EU,0
+pipelines,338,eu,NS2,FP-EU,0
+poland,1928,eu,poland,FP-EU,0
+polish,321,eu,poland,FP-EU,0
+polish border,294,eu,poland,FP-EU,0
+portugal,553,eu,portugal,FP-EU,0
+romania,295,eu,romania,FP-EU,0
+slovakia,146,eu,slovakia,FP-EU,0
+soros,1254,eu,soros,,0
+spain,1793,eu,spain,FP-EU,0
+spanish,821,eu,spain,FP-EU,0
+barcelona,377,eu,spain,FP-EU,0
+catalonia,322,eu,spain,FP-EU,0
+auspol,1000,eu,,,0
+finland,832,finland,finland,FP-EU,0
+france,13130,france,france,FP-EU,0
+paris,4924,france,france,FP-EU,0
+macron,820,france,france,FP-EU,0
+strasbourg,699,france,france,FP-EU,0
+french,649,france,france,FP-EU,0
+emmanuel macron,563,france,france,FP-EU,0
+calais,386,france,france,FP-EU,0
+michael valls,277,france,france,FP-EU,0
+normandy,272,france,france,FP-EU,0
+#yellowvest,39,france,france,FP-EU,0
+hungary,927,hungary,hungary,FP-EU,0
+budapest,781,hungary,hungary,FP-EU,0
+latvia,791,latvia,latvia,FP-EU,0
+shell,1363,netherlands,netherlands,FP-EU,0
+netherlands,980,netherlands,netherlands,FP-EU,0
+maastricht,287,netherlands,netherlands,FP-EU,0
+dutch,203,netherlands,netherlands,FP-EU,0
+amsterdam,194,netherlands,netherlands,FP-EU,0
+norway,1214,norway,norway,FP-EU,0
+sweden,7828,sweden,sweden,FP-EU,0
+stockholm,999,sweden,sweden,FP-EU,0
+swedes,749,sweden,sweden,FP-EU,0
+switzerland,2136,switzerland,switzerland,,0
+geneva,273,switzerland,switzerland,,0
+gina miller,1080,uk,activist,,0
+nnamdi kanu,305,uk,activist,,0
+terry jones,211,uk,actor,,0
+ross kemp,190,uk,actor,,0
+robert powell,188,uk,actor,,0
+rowling,915,uk,author,,0
+nigel farage,2103,uk,brexit,farage,0
+nigel,1760,uk,brexit,farage,0
+withdrawal agreement,1250,uk,brexit,,1
+withdrawal agreement bill,861,uk,brexit,,1
+brexit,451,uk,brexit,,1
+brexiteer,263,uk,brexit,,0
+FBPE,263,uk,brexit,,1
+ToryBrexit,263,uk,brexit,,1
+ricky gervais,1563,uk,comedian,,0
+gervais,308,uk,comedian,,0
+boris,25799,uk,conservatives,johnson,1
+boris johnson,23410,uk,conservatives,johnson,1
+conservatives,17244,uk,conservatives,,1
+johnson,10044,uk,conservatives,johnson,1
+tory,3067,uk,conservatives,,1
+john bercow,1980,uk,conservatives,,0
+boris johnsons,1659,uk,conservatives,johnson,1
+tories,1463,uk,conservatives,,1
+thatcher,1133,uk,conservatives,thatcher,0
+borisjohnson,1000,uk,conservatives,johnson,1
+tory party,920,uk,conservatives,,1
+mark francois,553,uk,conservatives,,0
+roger scruton,485,uk,conservatives,,0
+margaret thatcher,420,uk,conservatives,thatcher,0
+cameron,417,uk,conservatives,,0
+dominic raab,401,uk,conservatives,,1
+steve hilton,283,uk,conservatives,,0
+iain duncan smith,278,uk,conservatives,,0
+nicky morgan,272,uk,conservatives,,0
+matt hancock,253,uk,conservatives,,1
+Matty Hancock,253,uk,conservatives,,1
+david cameron,233,uk,conservatives,,0
+ken clarke,215,uk,conservatives,,0
+alok sharma,100,uk,conservatives,,1
+ben wallace,100,uk,conservatives,,1
+rish,100,uk,conservatives,,1
+rishi sunak,100,uk,conservatives,,1
+sunak,100,uk,conservatives,,1
+katie hopkins,757,uk,cons-media,,0
+nightingale,7584,uk,corona-virus,,1
+gtech,1254,uk,corona-virus,,1
+jenny harries,808,uk,corona-virus,,1
+job retention scheme,401,uk,corona-virus,,1
+habib zaidi,331,uk,corona-virus,,1
+chloe middleton,322,uk,corona-virus,,1
+louisa jordan,289,uk,corona-virus,,1
+nhs workers,229,uk,corona-virus,,1
+herd immunity plan,165,uk,corona-virus,,1
+#nih,157,uk,corona-virus,,1
+chris whitty,100,uk,corona-virus,,1
+chris witty,100,uk,corona-virus,,1
+jenny harries,100,uk,corona-virus,,1
+sir patrick,100,uk,corona-virus,,1
+sir patrick vallance,100,uk,corona-virus,,1
+snorkels,100,uk,corona-virus,,1
+UK deaths,100,uk,corona-virus,,1
+vallance,100,uk,corona-virus,,1
+covid19uk,2,uk,corona-virus,,1
+emily jones bolton,736,uk,crime,,1
+emily jones,647,uk,crime,,1
+RAF,1888,uk,defense,,1
+Royal Air Force,1888,uk,defense,,1
+Royal Navy,1888,uk,defense,,1
+austerity,1972,uk,economy,,1
+pounds,1526,uk,economy,,0
+pupils,7521,uk,education,,1
+referendum,6247,uk,election,,0
+tommy robinson,2039,uk,far-right,robinson,0
+scott morrison,835,uk,fp-australia,,0
+australian,215,uk,fp-australia,,0
+downing st,100,uk,government,johnson,1
+downing street,100,uk,government,johnson,1
+HME,100,uk,government,,1
+HMG,100,uk,government,,1
+no 10,100,uk,government,johnson,1
+chinks,110,uk,hate,,1
+orientals,110,uk,hate,,1
+slitty-eyed,110,uk,hate,,1
+slopes,110,uk,hate,,1
+nhs,1794,uk,health,,1
+christopher steele,2415,uk,intel,,0
+owen,2633,uk,journalist,,0
+andrew neil,1481,uk,journalist,,0
+brendan oneill,1304,uk,journalist,,1
+owen jones,1165,uk,journalist,,1
+paul mason,391,uk,journalist,,0
+laura kuenssberg,384,uk,journalist,,1
+ash sarkar,320,uk,journalist,,0
+eamonn holmes,209,uk,journalist,,0
+victoria derbyshire,192,uk,journalist,,0
+maggie oliver,294,uk,justice,,0
+scottish judges,103,uk,justice,,1
+scottish juries,103,uk,justice,,1
+scottish jury,103,uk,justice,,1
+labour,32173,uk,labour,,0
+jeremy corbyn,11480,uk,labour,corbyn,1
+labour party,9206,uk,labour,,1
+jeremy,7059,uk,labour,corbyn,0
+jess phillips,2799,uk,labour,phillips,0
+blair,2331,uk,labour,blair,0
+corbyn,2228,uk,labour,corbyn,1
+emily thornberry,2215,uk,labour,thornberry,0
+keir starmer,1660,uk,labour,starmer,1
+labor,1651,uk,labour,,0
+labour leader,1541,uk,labour,,0
+sadiq khan,1371,uk,labour,khan,1
+diane abbott,1320,uk,labour,abbott,0
+tony blair,1299,uk,labour,blair,0
+labour government,1092,uk,labour,,0
+clive lewis,1069,uk,labour,lewis,0
+labour mps,917,uk,labour,,0
+john mcdonnell,916,uk,labour,,1
+angela rayner,889,uk,labour,,0
+richard burgon,711,uk,labour,,0
+david lammy,697,uk,labour,,1
+barry gardiner,537,uk,labour,,0
+labour activist,454,uk,labour,,0
+lindsay hoyle,405,uk,labour,,0
+labour candidate,391,uk,labour,,0
+chris williamson,359,uk,labour,,0
+miliband,350,uk,labour,,0
+dennis skinner,323,uk,labour,,0
+keith vaz,300,uk,labour,,0
+labour mp,296,uk,labour,,0
+yvette cooper,289,uk,labour,,0
+george galloway,285,uk,labour,,1
+jess philips,281,uk,labour,,1
+lisa nandy,270,uk,labour,,0
+jon ashworth,256,uk,labour,,0
+ken loach,256,uk,labour,,0
+labour members,239,uk,labour,,0
+alan johnson,225,uk,labour,,0
+labour leadership race,219,uk,labour,,0
+ken livingstone,216,uk,labour,,0
+labour member,214,uk,labour,,0
+labour manifesto,210,uk,labour,,0
+labour voter,204,uk,labour,,0
+labour party members,203,uk,labour,,0
+kate hoey,202,uk,labour,,0
+labour movement,201,uk,labour,,0
+andy burnham,199,uk,labour,,0
+joan collins,185,uk,labour,,0
+labour party leader,183,uk,labour,,0
+tony benn,182,uk,labour,,0
+jonathan ashworth,181,uk,labour,,0
+labour results,181,uk,labour,,0
+swinson,1459,uk,libdems,swinson,0
+jo swinson,450,uk,libdems,swinson,0
+libdems,367,uk,libdems,,0
+sky,2357,uk,media,,1
+bbc,1554,uk,media,,1
+guardian,376,uk,media,,1
+david attenborough,239,uk,media,,0
+robert maxwell,185,uk,media,,0
+andrew marr,100,uk,media,,1
+kuenssberg,100,uk,media,,1
+laura kuenssberg,100,uk,media,,1
+radio 2,100,uk,media,,1
+radio 4,100,uk,media,,1
+harry,17792,uk,royalty,harry,1
+meghan,15627,uk,royalty,meghan,1
+queen,7563,uk,royalty,queen,1
+meghan markle,6199,uk,royalty,meghan,1
+duchess,2558,uk,royalty,,0
+william,2542,uk,royalty,william,0
+charles,2535,uk,royalty,charles,1
+prince,1830,uk,royalty,,1
+monarchy,1613,uk,royalty,,1
+prince harry,1542,uk,royalty,harry,1
+royals,1397,uk,royalty,,1
+crown,976,uk,royalty,,1
+buckingham,872,uk,royalty,,1
+royalty,723,uk,royalty,,1
+prince charles,346,uk,royalty,charles,1
+megan markle,290,uk,royalty,meghan,1
+kate middleton,276,uk,royalty,,0
+meghan markles,199,uk,royalty,meghan,1
+prince-formerly-known-as-harry,85,uk,royalty,,1
+lily allen,688,uk,singer,,0
+james arthur,288,uk,singer,,0
+poisoning,202,uk,skripal,,0
+sturgeon,1030,uk,snp,sturgeon,1
+snp,374,uk,snp,,1
+conor mcgregor,336,uk,sports,,1
+gary neville,278,uk,sports,,0
+gary lineker,204,uk,sports,,0
+ben collins,194,uk,sports,,0
+usman khan,457,uk,terror,,0
+knife stabbings,194,uk,terror,,0
+knife,1854,uk,terrorism,,0
+philip schofield,338,uk,tv,,0
+rachel riley,202,uk,tv,,0
+nick ferrari,190,uk,tv,,0
+britain,17327,uk,,,1
+london,15888,uk,,,1
+parliament,12686,uk,,,1
+scotland,10866,uk,,,1
+quid,10183,uk,,,0
+england,6539,uk,,,1
+manchester,5330,uk,,,0
+ireland,4937,uk,,,1
+uk,4877,uk,,,1
+lord,4524,uk,,,1
+kingdom,4024,uk,,,1
+rotherham,2761,uk,,,0
+westminster,1993,uk,,,1
+cambridge,1950,uk,,,1
+mp,1895,uk,,,1
+brits,1874,uk,,,1
+sussex,1675,uk,,,1
+arse,1601,uk,,,1
+english,1599,uk,,,1
+scots,1323,uk,,,1
+peerage,1308,uk,,,0
+glasgow,1293,uk,,,0
+birmingham,1270,uk,,,1
+leeds,1270,uk,,,0
+yorkshire,1247,uk,,,0
+commonwealth,1197,uk,,,1
+liverpool,1058,uk,,,0
+bloke,1012,uk,,,0
+britons,1000,uk,,,1
+duchessofcambridge,1000,uk,,,0
+princegeorge,1000,uk,,,0
+princelouis,1000,uk,,,0
+princessofcharlotte,1000,uk,,,0
+westyorkshire,1000,uk,,,0
+rochdale,992,uk,,,0
+hrh,985,uk,,,1
+britons,848,uk,,,1
+home secretary,788,uk,,,1
+telford,787,uk,,,0
+chelsea,743,uk,,,0
+oxford,617,uk,,,1
+british,579,uk,,,1
+dublin,540,uk,,,1
+cardiff,539,uk,,,1
+blyth,536,uk,,,0
+edinburgh,529,uk,,,1
+scot,374,uk,,,1
+bbcs,368,uk,,,1
+uk-style,363,uk,,,1
+cornwall,361,uk,,,0
+whitehall,346,uk,,,1
+leicester,344,uk,,,0
+belfast,340,uk,,,1
+wales,332,uk,,,1
+newcastle,322,uk,,,0
+huddersfield,321,uk,,,0
+knight,313,uk,,,0
+shadow cabinet,312,uk,,,1
+u.k.,310,uk,,,1
+oldham,305,uk,,,0
+party mep,305,uk,,,0
+grimsby,304,uk,,,0
+peston,303,uk,,,1
+uxbridge,302,uk,,,0
+milton keynes,286,uk,,,0
+george orwell,276,uk,,,0
+islington,276,uk,,,0
+london,274,uk,,,1
+winston churchill,271,uk,,,1
+churchill,268,uk,,,1
+salford,268,uk,,,0
+windsor,265,uk,,,0
+rasmussen,264,uk,,,0
+hackney,261,uk,,,0
+bercow,257,uk,,,0
+project fear,242,uk,,,0
+stephen powis,226,uk,,,0
+rick stein,215,uk,,,0
+southampton,213,uk,,,0
+parliament today,212,uk,,,1
+post-brexit,212,uk,,,1
+wrexham,205,uk,,,0
+sas,201,uk,,,1
+unionist,201,uk,,,0
+anthony costello,200,uk,,,0
+sherlock,189,uk,,,0
+derbyshire,185,uk,,,0
+essex,181,uk,,,0
+home office boss,136,uk,,,1
+home office worker,134,uk,,,1
+philip rutman,124,uk,,,0
+andrew sabisky,123,uk,,,0
+abortion,9230,usa,abortion,,0
+abortions,3032,usa,abortion,,0
+parenthood,2993,usa,abortion,,0
+term abortion,301,usa,abortion,,0
+abortionist,289,usa,abortion,,0
+abortion fanatic,195,usa,abortion,,0
+champions abortion,171,usa,abortion,,0
+abortion providers abortion,127,usa,abortion,,0
+abortion industry secrets,105,usa,abortion,,0
+abortion-protector,75,usa,abortion,,0
+tom fitton,753,usa,activist,,0
+carole baskin,422,usa,activist,,0
+nathan phillips,298,usa,activist,,0
+james o'keefe,297,usa,activist,,0
+louis farrakhan,295,usa,activist,,0
+farrakhan,201,usa,activist,,0
+vince vaughn,3155,usa,actor,,0
+brad pitt,908,usa,actor,,0
+joaquin phoenix,496,usa,actor,,0
+jon voight,344,usa,actor,,0
+gary sinise,341,usa,actor,,0
+nick robinson,305,usa,actor,,0
+robert conrad,279,usa,actor,,0
+john wayne,216,usa,actor,,0
+john cusack,209,usa,actor,,0
+tom hanks,201,usa,actor,,0
+kevin spacey,193,usa,actor,,0
+timothy hutton,131,usa,actor,,0
+michelle williams,828,usa,actress,,0
+alyssa milano,435,usa,actress,,0
+gwyneth paltrow,297,usa,actress,,0
+jane fonda,267,usa,actress,,0
+gwyneth,230,usa,actress,,0
+noah feldman,1493,usa,author,,0
+mark galli,305,usa,author,,0
+water accessibility,270,usa,cc,,0
+water accessibility issues,228,usa,cc,,0
+george nader,1232,usa,child-abuse,,0
+jeffrey epsteins,813,usa,child-abuse,,0
+child abuse,437,usa,child-abuse,,0
+exploitation crackdown,398,usa,child-abuse,,0
+jeffery epstein,317,usa,child-abuse,,0
+glen christie,292,usa,child-abuse,,0
+billionaire pedophile,245,usa,child-abuse,,0
+child porn,244,usa,child-abuse,,0
+#christmas,246,usa,christian,,0
+roger williams,217,usa,christian,,0
+america god,216,usa,christian,,0
+emissions rule,851,usa,climate change,,0
+fuel emissions,623,usa,climate change,,0
+kathy griffin,825,usa,comedian,,0
+george lopez,739,usa,comedian,,0
+joe rogan,342,usa,comedian,,0
+george carlin,315,usa,comedian,,0
+patton oswalt,207,usa,comedian,,0
+jimmy fallons,132,usa,comedian,,0
+tucker carlson,2961,usa,cons-media,,0
+fox,2793,usa,cons-media,,0
+mark levin,2113,usa,cons-media,,0
+laura ingraham,2036,usa,cons-media,,0
+limbaugh,1793,usa,cons-media,,0
+rush limbaugh,1459,usa,cons-media,,0
+john solomon,1320,usa,cons-media,,0
+juan williams,1111,usa,cons-media,,0
+jay sekulow,1092,usa,cons-media,,0
+sean hannity,1056,usa,cons-media,,0
+murdoch,854,usa,cons-media,,0
+ben shapiro,680,usa,cons-media,,0
+kimberley strassel,673,usa,cons-media,,0
+charlie kirk,552,usa,cons-media,,0
+maria bartiromo,532,usa,cons-media,,0
+gregg jarrett,524,usa,cons-media,,0
+gutfeld,346,usa,cons-media,,0
+glenn beck,321,usa,cons-media,,0
+fox news,319,usa,cons-media,,0
+james rosen,309,usa,cons-media,,0
+shepard smith,301,usa,cons-media,,0
+hannity,297,usa,cons-media,,0
+lou dobbs,292,usa,cons-media,,0
+martha maccallum,292,usa,cons-media,,0
+michelle malkin,291,usa,cons-media,,0
+wall street journal,285,usa,cons-media,,0
+geraldo rivera,284,usa,cons-media,,0
+gianni caldwell,261,usa,cons-media,,0
+ingraham,249,usa,cons-media,,0
+jeanine pirro,242,usa,cons-media,,0
+dan bongino,238,usa,cons-media,,0
+shapiro,215,usa,cons-media,,0
+jennifer rubin,188,usa,cons-media,,0
+#cpac,119,usa,cons-media,,0
+paycheck protection program,2787,usa,corona-virus,,0
+virus briefings,2013,usa,corona-virus,,0
+dr. birx,1614,usa,corona-virus,,0
+hospital exec,1507,usa,corona-virus,,0
+issues emergency authorization,1261,usa,corona-virus,,0
+emergency authorization,1212,usa,corona-virus,,0
+response bill,939,usa,corona-virus,,0
+hydroxychloroquine,929,usa,corona-virus,,0
+bill gates-funded,790,usa,corona-virus,,0
+roadhouse ceo,768,usa,corona-virus,,0
+spring breakers,692,usa,corona-virus,,0
+anthony fauci,654,usa,corona-virus,,0
+loan resources,648,usa,corona-virus,,0
+fabio rampelli,640,usa,corona-virus,,0
+chinavirus,555,usa,corona-virus,,0
+china-virus,555,usa,corona-virus,,0
+nations distillers,555,usa,corona-virus,,0
+infant suffocation,549,usa,corona-virus,,0
+anthony cardillo,482,usa,corona-virus,,0
+jim santilli,477,usa,corona-virus,,0
+#paycheckprotectionprogram,463,usa,corona-virus,,0
+amador,458,usa,corona-virus,,0
+colleen smith,378,usa,corona-virus,,0
+fema,375,usa,corona-virus,,0
+mario salerno,371,usa,corona-virus,,0
+symptoms border patrol,370,usa,corona-virus,,0
+relief bill americans,342,usa,corona-virus,,0
+toilet paper aisle,329,usa,corona-virus,,0
+gun store closures,328,usa,corona-virus,,0
+crisis manager-in-chief,322,usa,corona-virus,,0
+christi grimm,318,usa,corona-virus,,0
+world health organizations budget,294,usa,corona-virus,,0
+bill gates,283,usa,corona-virus,,0
+hotel orgy,280,usa,corona-virus,,0
+presidents briefings,264,usa,corona-virus,,0
+thomas harvey,259,usa,corona-virus,,0
+dr. vladimir,243,usa,corona-virus,,0
+recovery bill,237,usa,corona-virus,,0
+drug president,214,usa,corona-virus,,0
+disease pandemics,202,usa,corona-virus,,0
+house-to-house searches,175,usa,corona-virus,,0
+alex gorsky,167,usa,corona-virus,,0
+hoax breakdown,132,usa,corona-virus,,0
+pandemic specialist,132,usa,corona-virus,,0
+mass-panic efforts,112,usa,corona-virus,,0
+robert redfield,94,usa,corona-virus,,0
+bases,7695,usa,defense,,0
+pentagon,3580,usa,defense,,0
+veteran,3454,usa,defense,,0
+veterans,3426,usa,defense,,0
+michael flynn,3373,usa,defense,,0
+vets,2409,usa,defense,,0
+vet,2320,usa,defense,,0
+marines,2090,usa,defense,,0
+brett crozier,1230,usa,defense,,0
+war veterans day,1070,usa,defense,,0
+defense bill,845,usa,defense,,0
+space force,738,usa,defense,,0
+#medalofhonorday,648,usa,defense,,0
+homeland security,477,usa,defense,,0
+mcdonnell,440,usa,defense,,0
+crozier,360,usa,defense,,0
+war veteran,300,usa,defense,,0
+aircraft carrier captain,242,usa,defense,,0
+coast guard,211,usa,defense,,0
+marine corp vet,201,usa,defense,,0
+frank mckenzie,179,usa,defense,,0
+charles brown jr.,79,usa,defense,,0
+democrats,226104,usa,democrats,,0
+obama,83980,usa,democrats,obama,0
+dems,78756,usa,democrats,,0
+pelosi,73331,usa,democrats,pelosi,0
+nancy pelosi,50049,usa,democrats,pelosi,0
+adam schiff,49692,usa,democrats,schiff,0
+schiff,37577,usa,democrats,schiff,0
+joe biden,34213,usa,democrats,biden,0
+biden,31661,usa,democrats,biden,0
+bernie,29412,usa,democrats,bernie,0
+clinton,28916,usa,democrats,clinton,0
+nancy,28234,usa,democrats,pelosi,0
+bernie sanders,25822,usa,democrats,bernie,0
+hillary,24303,usa,democrats,clinton,0
+liberals,22467,usa,democrats,,0
+hillary clinton,18861,usa,democrats,clinton,0
+hunter biden,16591,usa,democrats,,0
+democrat,15549,usa,democrats,,0
+nadler,12365,usa,democrats,nadler,0
+warren,12357,usa,democrats,warren,0
+house democrats,11500,usa,democrats,,0
+elizabeth warren,11354,usa,democrats,warren,0
+sanders,10636,usa,democrats,bernie,0
+bidens,9350,usa,democrats,biden,0
+schumer,9270,usa,democrats,schumer,0
+jerry nadler,9022,usa,democrats,nadler,0
+aoc,8567,usa,democrats,aoc,0
+john kerry,7227,usa,democrats,kerry,0
+nothing democrats,6728,usa,democrats,,0
+dnc,6029,usa,democrats,,0
+chuck schumer,5945,usa,democrats,schumer,0
+obamas,4493,usa,democrats,obama,0
+bloomberg,4078,usa,democrats,,0
+clintons,3993,usa,democrats,clinton,0
+joe bidens,3617,usa,democrats,biden,0
+house dems,3470,usa,democrats,,0
+tara reade,3458,usa,democrats,biden,0
+hunter,3246,usa,democrats,,0
+mike bloomberg,3021,usa,democrats,bloomberg,0
+rashida,2811,usa,democrats,,0
+barack obama,2509,usa,democrats,obama,0
+dem,2324,usa,democrats,,0
+elizabeth,2179,usa,democrats,warren,0
+michael bloomberg,2153,usa,democrats,bloomberg,0
+pamela karlan,2104,usa,democrats,karlan,0
+kamala harris,2086,usa,democrats,harris,0
+cory booker,1816,usa,democrats,,0
+ralph northam,1735,usa,democrats,,0
+nothing dems,1652,usa,democrats,,0
+michelle obama,1642,usa,democrats,obama,0
+klobuchar,1597,usa,democrats,klobuchar,0
+hunter bidens,1529,usa,democrats,,0
+dem party,1441,usa,democrats,biden,0
+hussein obama,1344,usa,democrats,obama,0
+kennedy,1183,usa,democrats,,0
+obama-era,1135,usa,democrats,obama,0
+cuomo,1084,usa,democrats,,0
+feinstein,1069,usa,democrats,,0
+democrat party,1026,usa,democrats,,0
+chuck,994,usa,democrats,schumer,0
+alexandra,918,usa,democrats,aoc,0
+rashida tlaib,906,usa,democrats,tlaib,0
+amy klobuchar,897,usa,democrats,klobuchar,0
+senate democrats,875,usa,democrats,,0
+collin peterson,866,usa,democrats,,0
+hank johnson,863,usa,democrats,,0
+hillary clintons,850,usa,democrats,clinton,0
+pelosi-schiff,799,usa,democrats,pelosi,0
+level democrats,793,usa,democrats,aoc,0
+ocasio-cortez,785,usa,democrats,,0
+stacey abrams,777,usa,democrats,,0
+jill biden,708,usa,democrats,biden,0
+adam schiffs,694,usa,democrats,schiff,0
+gavin newsom,666,usa,democrats,,0
+james clyburn,645,usa,democrats,,0
+jackson lee,641,usa,democrats,,0
+joe manchin,611,usa,democrats,,0
+jimmy carter,591,usa,democrats,,0
+elizabeth warrens,586,usa,democrats,warren,0
+imran awan,584,usa,democrats,,0
+chelsea clinton,571,usa,democrats,clinton,0
+hakeem jeffries,554,usa,democrats,,0
+john huber,496,usa,democrats,,0
+dianne feinstein,489,usa,democrats,,0
+ben rhodes,456,usa,democrats,,0
+john dingell,429,usa,democrats,,0
+george kent,420,usa,democrats,,0
+paul pelosi,410,usa,democrats,,0
+andrew cuomo,405,usa,democrats,,0
+veronica escobar,400,usa,democrats,,0
+sanders iowa,386,usa,democrats,,0
+mucarsel-powell,382,usa,democrats,,0
+obiden-bama,382,usa,democrats,biden,0
+wasserman schultz,381,usa,democrats,,0
+barack hussein obama,377,usa,democrats,obama,0
+james biden,376,usa,democrats,biden,0
+dem/socialists,374,usa,democrats,,0
+democrat rivals,366,usa,democrats,,0
+joe lockhart,362,usa,democrats,,0
+john podesta,354,usa,democrats,,0
+debbie wasserman schultz,351,usa,democrats,,0
+liz warren,341,usa,democrats,warren,0
+ben mcadams,333,usa,democrats,,0
+valerie jarrett,333,usa,democrats,,0
+obama/biden,331,usa,democrats,biden,0
+time democrats,330,usa,democrats,,0
+communist democrat party,329,usa,democrats,,0
+john kennedy,327,usa,democrats,,0
+sheila jackson lee,323,usa,democrats,,0
+steyer,323,usa,democrats,,0
+rules committee democrats,319,usa,democrats,,0
+leftie,318,usa,democrats,,0
+freshmen democrats,316,usa,democrats,,0
+freshman democrat,315,usa,democrats,,0
+debbie mucarsel-powell,313,usa,democrats,,0
+doug jones,312,usa,democrats,,0
+mr. nadler,310,usa,democrats,,0
+obama doj,309,usa,democrats,,0
+deplorables,308,usa,democrats,,0
+barry soetoro,307,usa,democrats,,0
+slotkin,302,usa,democrats,,0
+sheila jackson,297,usa,democrats,,0
+john carlin,296,usa,democrats,,0
+anthony weiner,290,usa,democrats,,0
+james carville,285,usa,democrats,,0
+mcgovern,285,usa,democrats,,0
+mr horowitz,283,usa,democrats,,0
+robert ray,278,usa,democrats,,0
+harry reid,277,usa,democrats,,0
+hillary rodham clinton,277,usa,democrats,clinton,0
+#schiff,274,usa,democrats,,0
+kirsten gillibrand,274,usa,democrats,,0
+omar rashida tlaib,271,usa,democrats,,0
+jerrold nadler,268,usa,democrats,,0
+barack,267,usa,democrats,obama,0
+cortez,267,usa,democrats,aoc,0
+michelle obamas,261,usa,democrats,,0
+democrat support,260,usa,democrats,,0
+johnson-harrell,260,usa,democrats,,0
+louella thompson,256,usa,democrats,,0
+russia/sanders,252,usa,democrats,bernie,0
+blumenthal,246,usa,democrats,,0
+david skaggs,238,usa,democrats,,0
+matt cartwright,238,usa,democrats,,0
+kathleen kennedy townsend,235,usa,democrats,,0
+democrats today,232,usa,democrats,,0
+josh gottheimer,225,usa,democrats,,0
+lofgren,224,usa,democrats,,0
+mikie sherrill,223,usa,democrats,,0
+biden schiff,220,usa,democrats,biden,0
+democrats vow,216,usa,democrats,,0
+democrat caucus,211,usa,democrats,,0
+house minority leader,208,usa,democrats,,0
+obama-appointed,208,usa,democrats,,0
+chris pappas,206,usa,democrats,,0
+chris stevens,204,usa,democrats,,0
+democrat standarddo,204,usa,democrats,,0
+katie hill,204,usa,democrats,,0
+frank biden,203,usa,democrats,biden,0
+cedric richmond,200,usa,democrats,,0
+brzezinski,199,usa,democrats,,0
+tom ohalleran,199,usa,democrats,,0
+trump obama,198,usa,democrats,,0
+aliens democrats,194,usa,democrats,,0
+pelosi/schiff/nadler,194,usa,democrats,,0
+bob menendez,192,usa,democrats,,0
+paul begala,190,usa,democrats,,0
+debbie wasserman,187,usa,democrats,,0
+john lewis,185,usa,democrats,,0
+#obama,181,usa,democrats,,0
+democrats demise,181,usa,democrats,,0
+schumer-pelosi-sanders-biden- buttigieg-warren-klobuchar-steyer,163,usa,democrats,,0
+hunter biden-connected,149,usa,democrats,,0
+state department,3035,usa,dos,,0
+state dept,2956,usa,dos,,0
+dollars,12411,usa,economy,,0
+dollar,2337,usa,economy,,0
+infrastructure bill,373,usa,economy,,0
+dow jones,346,usa,economy,,0
+credit card regulations,339,usa,economy,,0
+imf,336,usa,economy,,0
+401k,323,usa,economy,,0
+treasury secretary,277,usa,economy,,0
+bank cut interest rates,272,usa,economy,,0
+literacy programs,564,usa,education,,0
+education/labor committees,407,usa,education,,0
+re-election,4442,usa,elections,,0
+primaries,1691,usa,elections,,0
+campaign trail,1072,usa,elections,,0
+election campaign,1023,usa,elections,,0
+poll numbers,955,usa,elections,,0
+campaign manager,929,usa,elections,,0
+voter registration,922,usa,elections,,0
+smear campaign,882,usa,elections,,0
+election year,689,usa,elections,,0
+battleground states,450,usa,elections,,0
+swing districts,385,usa,elections,,0
+election fraud,355,usa,elections,,0
+swing states,339,usa,elections,,0
+democracies,321,usa,elections,,0
+campaign finance law violations,275,usa,elections,,0
+senate race,257,usa,elections,,0
+election time,251,usa,elections,,0
+election coverage,249,usa,elections,,0
+senate seat scandal,217,usa,elections,,0
+poll workers,191,usa,elections,,0
+saliva-soaked fingers,188,usa,elections,,0
+billionaire fetish,182,usa,elections,,0
+election moderator,155,usa,elections,,0
+anti-trump bias,152,usa,elections,,0
+trump-hating lunatic,151,usa,elections,,0
+caucus volunteers,140,usa,elections,,0
+virginias votes,122,usa,elections,,0
+election interference investigation,121,usa,elections,,0
+debate prep,115,usa,elections,,0
+turnout machine,113,usa,elections,,0
+#uncledick,112,usa,elections,,0
+ervin julian,112,usa,elections,,0
+vote total,111,usa,elections,,0
+campaign trail joke,109,usa,elections,,0
+todaytrump,108,usa,elections,,0
+trump communications director,104,usa,elections,,0
+front runner democrats,103,usa,elections,,0
+fidel sanders,85,usa,elections,,0
+billy graham,1343,usa,evangelical,,0
+franklin graham,1115,usa,evangelical,,0
+evangelicals,883,usa,evangelical,,0
+jim baker,269,usa,evangelical,,0
+kyle jurek,4209,usa,far-left,,0
+anarchist group,147,usa,far-left,,0
+laura loomer,4288,usa,far-right,,0
+alex jones,1134,usa,far-right,,0
+nick fuentes,351,usa,far-right,,0
+laura loomer-laura loomer,278,usa,far-right,,0
+david duke,243,usa,far-right,,0
+andrew breitbart,221,usa,far-right,,0
+fbi,48446,usa,fbi,,0
+mccabe,5687,usa,fbi,,0
+james comey,5396,usa,fbi,,0
+john durham,5224,usa,fbi,,0
+christopher wray,3019,usa,fbi,,0
+fisa,2890,usa,fbi,,0
+andrew mccabe,2378,usa,fbi,,0
+jim comey,1535,usa,fbi,,0
+chris wray,1287,usa,fbi,,0
+fisa warrant,1284,usa,fbi,,0
+page fisa,1059,usa,fbi,,0
+comey,978,usa,fbi,,0
+robert mueller,862,usa,fbi,,0
+fisa court,824,usa,fbi,,0
+obama fbi,799,usa,fbi,,0
+fbi christopher wray,491,usa,fbi,,0
+page fisa warrant,396,usa,fbi,,0
+page fisa application,392,usa,fbi,,0
+kevin clinesmith,339,usa,fbi,,0
+page fisa applications,303,usa,fbi,,0
+obamas fbi,289,usa,fbi,,0
+fisa power,260,usa,fbi,,0
+reform markup tomorrow,248,usa,fbi,,0
+strzok-page emails,224,usa,fbi,,0
+mccabe yates,153,usa,fbi,,0
+f.b.i. official,135,usa,fbi,,0
+fbi mccabe,129,usa,fbi,,0
+#fisa reform,108,usa,fbi,,0
+larry kudlow,369,usa,fed,,0
+allies,5696,usa,fp,,0
+empire,1882,usa,fp,,0
+afghanistan,8011,usa,fp-afghanistan,FP-SA,0
+argentina,394,usa,fp-argentina,FP-LA,0
+bolivia,1230,usa,fp-bolivia,FP-LA,0
+bolivian,205,usa,fp-bolivia,FP-LA,0
+brazil,737,usa,fp-brazil,FP-LA,0
+canada,20265,usa,fp-canada,FP-NA,0
+trudeau,3773,usa,fp-canada,FP-NA,0
+justin trudeau,3647,usa,fp-canada,FP-NA,0
+alberta,1555,usa,fp-canada,FP-NA,0
+canadians,1395,usa,fp-canada,FP-NA,0
+chile,640,usa,fp-chile,FP-LA,0
+chilean,180,usa,fp-chile,FP-LA,0
+china,33007,usa,fp-china,FP-EA,0
+trade agreement,2645,usa,fp-china,FP-EA,0
+tariffs,2549,usa,fp-china,FP-EA,0
+beijing,1118,usa,fp-china,FP-EA,0
+huawei,817,usa,fp-china,FP-EA,0
+chinese,365,usa,fp-china,FP-EA,0
+#china,324,usa,fp-china,FP-EA,0
+shanghai,246,usa,fp-china,FP-EA,0
+trade relations,210,usa,fp-china,FP-EA,0
+costa rica,355,usa,fp-costarica,FP-LA,0
+cuba,1647,usa,fp-cuba,FP-LA,0
+fidel castro,377,usa,fp-cuba,FP-LA,0
+salvador,185,usa,fp-elsalvador,FP-LA,0
+guam,1231,usa,fp-guam,FP-LA,0
+guatemala,1185,usa,fp-guatemala,FP-LA,0
+honduras,1290,usa,fp-honduras,FP-LA,0
+iran,86244,usa,fp-iran,FP-ME,0
+tehran,8772,usa,fp-iran,FP-ME,0
+soleimani,4518,usa,fp-iran,FP-ME,0
+mullahs,2946,usa,fp-iran,FP-ME,0
+hamas,2866,usa,fp-iran,FP-ME,0
+iranians,2715,usa,fp-iran,FP-ME,0
+khamenei,1924,usa,fp-iran,FP-ME,0
+hezbollah,1898,usa,fp-iran,FP-ME,0
+ayatollah,1705,usa,fp-iran,FP-ME,0
+tehran nancy,1368,usa,fp-iran,FP-ME,0
+khomeini,467,usa,fp-iran,FP-ME,0
+obamas iran,286,usa,fp-iran,FP-ME,0
+lran john kerry,282,usa,fp-iran,FP-ME,0
+suleimani,265,usa,fp-iran,FP-ME,0
+iran obama,181,usa,fp-iran,FP-ME,0
+iraq,22040,usa,fp-iraq,FP-ME,0
+baghdad,2678,usa,fp-iraq,FP-ME,0
+iraqis,672,usa,fp-iraq,FP-ME,0
+jamaica,394,usa,fp-jamaica,FP-CA,0
+japan,2655,usa,fp-japan,FP-EA,0
+tokyo,471,usa,fp-japan,FP-EA,0
+korea,3634,usa,fp-korea,FP-EA,0
+korean,326,usa,fp-korea,FP-EA,0
+north korea,183,usa,fp-korea,FP-EA,0
+south korea,183,usa,fp-korea,FP-EA,0
+kurds,263,usa,fp-me,FP-ME,0
+saudi arabian,249,usa,fp-me,FP-ME,0
+kurdistan,239,usa,fp-me,FP-ME,0
+mosul,226,usa,fp-me,FP-ME,0
+mexico,9069,usa,fp-mexico,FP-LA,0
+mexican,913,usa,fp-mexico,FP-LA,0
+andres manuel,273,usa,fp-mexico,FP-LA,0
+nafta,264,usa,fp-mexico,FP-LA,0
+saudi,4263,usa,fp-saudi,FP-ME,0
+saudi arabia,3895,usa,fp-saudi,FP-ME,0
+arabia,1169,usa,fp-saudi,FP-ME,0
+saudis,1169,usa,fp-saudi,FP-ME,0
+ukraine,58177,usa,fp-ukraine,FP-EE,0
+ukrainians,2232,usa,fp-ukraine,FP-EE,0
+burisma,1400,usa,fp-ukraine,FP-EE,0
+kiev,1274,usa,fp-ukraine,FP-EE,0
+yuri lutsenko,569,usa,fp-ukraine,FP-EE,0
+kyiv,324,usa,fp-ukraine,FP-EE,0
+lutsenko,286,usa,fp-ukraine,FP-EE,0
+devon archer,232,usa,fp-ukraine,FP-EE,0
+venezuela,3586,usa,fp-venezuela,FP-LA,0
+maduro moros,239,usa,fp-venezuela,FP-LA,0
+nick sandmann,4559,usa,gun control,,0
+gun control,3134,usa,gun control,,0
+gun owners,2839,usa,gun control,,0
+gun rights rally,1675,usa,gun control,,0
+gun rights,1516,usa,gun control,,0
+gunman,1492,usa,gun control,,0
+gun rally,1444,usa,gun control,,0
+nra,839,usa,gun control,,0
+rifle,661,usa,gun control,,0
+gun control laws,628,usa,gun control,,0
+gun confiscation,508,usa,gun control,,0
+gun violence,503,usa,gun control,,0
+gun control bills,404,usa,gun control,,0
+handgun,370,usa,gun control,,0
+nick sandman,365,usa,gun control,,0
+david hogg,360,usa,gun control,,0
+gun ownership,323,usa,gun control,,0
+mass shootings,318,usa,gun control,,0
+gun ban,309,usa,gun control,,0
+gun grabbers,266,usa,gun control,,0
+gun-toting,243,usa,gun control,,0
+nicholas sandmann,226,usa,gun control,,0
+gun ranges,225,usa,gun control,,0
+gun-rights rally,223,usa,gun control,,0
+assault weapons ban,208,usa,gun control,,0
+concealed,194,usa,gun control,,0
+gun sanctuaries,192,usa,gun control,,0
+anthony ferrill,143,usa,gun control,,0
+#nra member,132,usa,gun control,,0
+panic alarm,123,usa,gun control,,0
+firearms,2315,usa,gun control ,,0
+jack wilson,1764,usa,gun debate,,0
+gun laws,1268,usa,gun debate,,0
+feds,103,usa,hate,,1
+obamacare,2003,usa,health,,0
+cdc,1072,usa,health,,0
+bill ripoffs,407,usa,health,,0
+immigration hoax,360,usa,immigration,,0
+patrol agents,301,usa,immigration,,0
+issue driver licenses,266,usa,immigration,,0
+#immigration laws,239,usa,immigration,,0
+sanctuary city fight,196,usa,immigration,,0
+deportation appeals,108,usa,immigration,,0
+outlaw sanctuary cities,75,usa,immigration,,0
+sanctuary cities,2282,usa,immigration ,,0
+border wall,1878,usa,immigration ,,0
+asylum seekers,943,usa,immigration ,,0
+refuge,935,usa,immigration ,,0
+immigration fraud,890,usa,immigration ,,0
+extradition,886,usa,immigration ,,0
+sanctuary policies,881,usa,immigration ,,0
+border security,758,usa,immigration ,,0
+refugee resettlement,676,usa,immigration ,,0
+sanctuary city,532,usa,immigration ,,0
+brian terry,425,usa,immigration ,,0
+amendment sanctuaries,408,usa,immigration ,,0
+border wall funding,376,usa,immigration ,,0
+border patrol,353,usa,immigration ,,0
+trump wall,308,usa,immigration ,,0
+citizenship law,248,usa,immigration ,,0
+immigration policy,246,usa,immigration ,,0
+ice detainer,204,usa,immigration ,,0
+border wall system,195,usa,immigration ,,0
+impeachment,175036,usa,impeachment,,0
+impeachment trial,15023,usa,impeachment,,0
+impeachment hoax,10312,usa,impeachment,,0
+quo,9925,usa,impeachment,,0
+impeachment sham,8781,usa,impeachment,,0
+sham impeachment,8128,usa,impeachment,,0
+impeachment articles,7981,usa,impeachment,,0
+senate impeachment trial,4531,usa,impeachment,,0
+impeachment hearings,3810,usa,impeachment,,0
+impeachment process,3559,usa,impeachment,,0
+impeachment case,3199,usa,impeachment,,0
+impeachment inquiry,2747,usa,impeachment,,0
+jonathan turley,2348,usa,impeachment,,0
+#impeachment,2334,usa,impeachment,,0
+impeachment scam,2243,usa,impeachment,,0
+impeachment coup,1906,usa,impeachment,,0
+impeachment managers,1824,usa,impeachment,,0
+impeachment manager,1732,usa,impeachment,,0
+hearing,1731,usa,impeachment,,0
+impeachment charade,1528,usa,impeachment,,0
+impeachment witness,1382,usa,impeachment,,0
+impeachment farce,1360,usa,impeachment,,0
+impeachment proceedings,1325,usa,impeachment,,0
+house impeachment,1315,usa,impeachment,,0
+daniel goldman,1275,usa,impeachment,,0
+impeachment votes,1264,usa,impeachment,,0
+house impeachment managers,1060,usa,impeachment,,0
+impeachment witnesses,1060,usa,impeachment,,0
+impeachment vote,1038,usa,impeachment,,0
+impeachment pens,962,usa,impeachment,,0
+impeachment circus,940,usa,impeachment,,0
+democrats impeachment,795,usa,impeachment,,0
+impeachment report,737,usa,impeachment,,0
+impeachment effort,633,usa,impeachment,,0
+impeachment trial rules,585,usa,impeachment,,0
+impeachment nonsense,563,usa,impeachment,,0
+impeachment team,546,usa,impeachment,,0
+impeachment evidence,540,usa,impeachment,,0
+impeachment push,540,usa,impeachment,,0
+impeachment crap,537,usa,impeachment,,0
+impeachment stunt,529,usa,impeachment,,0
+impeachment rules,520,usa,impeachment,,0
+impeachment delay,517,usa,impeachment,,0
+impeachment resolution,504,usa,impeachment,,0
+sham impeachment process,461,usa,impeachment,,0
+impeachment investigations,457,usa,impeachment,,0
+impeachment abuse,448,usa,impeachment,,0
+senate impeachment,448,usa,impeachment,,0
+impeachment power,445,usa,impeachment,,0
+impeachment markup,440,usa,impeachment,,0
+impeachment drama,423,usa,impeachment,,0
+sham impeachment trial,406,usa,impeachment,,0
+impeachment debate,403,usa,impeachment,,0
+impeachment efforts,389,usa,impeachment,,0
+impeachment committee,383,usa,impeachment,,0
+impeachment lawyer,369,usa,impeachment,,0
+biden-ukraine,368,usa,impeachment,,0
+impeachment leak,365,usa,impeachment,,0
+impeachment testimony,361,usa,impeachment,,0
+impeachment fiasco,357,usa,impeachment,,0
+impeachment thing,353,usa,impeachment,,0
+impeachment questions,347,usa,impeachment,,0
+impeachment poll numbers,346,usa,impeachment,,0
+impeachment gambit,336,usa,impeachment,,0
+impeachment article,307,usa,impeachment,,0
+impeachment argument,297,usa,impeachment,,0
+impeachment coverage,296,usa,impeachment,,0
+impeachment bs,292,usa,impeachment,,0
+impeachment crusade,292,usa,impeachment,,0
+impeachment video,292,usa,impeachment,,0
+house impeachment process,290,usa,impeachment,,0
+sham #impeachment,289,usa,impeachment,,0
+impeachment defense team,288,usa,impeachment,,0
+impeachment/coup,287,usa,impeachment,,0
+impeachment debacle,285,usa,impeachment,,0
+democrats impeachment sham,274,usa,impeachment,,0
+impeachment announcement,272,usa,impeachment,,0
+impeachment narrative,271,usa,impeachment,,0
+impeachment prosecutors,267,usa,impeachment,,0
+democrats sham impeachment,264,usa,impeachment,,0
+democrats impeachment case,261,usa,impeachment,,0
+impeachment scheme,256,usa,impeachment,,0
+house democrats impeachment,250,usa,impeachment,,0
+dems impeachment,247,usa,impeachment,,0
+impeachment week,247,usa,impeachment,,0
+impeachment fraud,225,usa,impeachment,,0
+lead impeachment manager,219,usa,impeachment,,0
+impeachment yesterday,218,usa,impeachment,,0
+impeachment support,217,usa,impeachment,,0
+impeachment expert,216,usa,impeachment,,0
+impeachment counsel,212,usa,impeachment,,0
+stomach-turning impeachment charade damages,212,usa,impeachment,,0
+impeachment battle,211,usa,impeachment,,0
+democrats impeachment hoax,208,usa,impeachment,,0
+impeachment notes,207,usa,impeachment,,0
+scam impeachment,204,usa,impeachment,,0
+impeachment theater,203,usa,impeachment,,0
+hoax impeachment,194,usa,impeachment,,0
+impeachment train,194,usa,impeachment,,0
+house impeachment effort,187,usa,impeachment,,0
+impeachment today,186,usa,impeachment,,0
+impeachment theory,181,usa,impeachment,,0
+impeachment malpractice,102,usa,impeachment,,0
+flynn,18981,usa,intelligence,,0
+brennan,10814,usa,intelligence,,0
+john brennan,4258,usa,intelligence,,0
+clapper,3935,usa,intelligence,,0
+cia,1553,usa,intelligence,,0
+nsc,1391,usa,intelligence,,0
+security council,1172,usa,intelligence,,0
+cia director,782,usa,intelligence,,0
+elissa slotkin,770,usa,intelligence,,0
+fisc,768,usa,intelligence,,0
+ray mcgovern,614,usa,intelligence,,0
+nsa,613,usa,intelligence,,0
+intelligence community watchdog,563,usa,intelligence,,0
+cia officer,438,usa,intelligence,,0
+alexander vindman,418,usa,intelligence,,0
+joe maguire,413,usa,intelligence,,0
+rick grenell,365,usa,intelligence,,0
+robert obrien,328,usa,intelligence,,0
+#flynn,322,usa,intelligence,,0
+mr. flynn,302,usa,intelligence,,0
+intelligence briefing,250,usa,intelligence,,0
+thomas monheim,239,usa,intelligence,,0
+michael rogers,234,usa,intelligence,,0
+dni,188,usa,intelligence,,0
+gen flynn,186,usa,intelligence,,0
+intelligence community agents,103,usa,intelligence,,0
+intelligence swamp,80,usa,intelligence,,0
+reza aslan,958,usa,islam,,0
+travel ban,314,usa,islam,,0
+glenn greenwald,463,usa,journalist,,0
+greg gutfeld,430,usa,journalist,,0
+peter schweizer,320,usa,journalist,,0
+attkisson,308,usa,journalist,,0
+horowitz,17933,usa,justice,,0
+mueller,13625,usa,justice,,0
+amendment,12954,usa,justice,,0
+obstruction,9535,usa,justice,,0
+misconduct,7886,usa,justice,,0
+epstein,7504,usa,justice,,0
+counsel,6798,usa,justice,,0
+hearings,5681,usa,justice,,0
+jeffrey epstein,4923,usa,justice,,0
+barr,4824,usa,justice,,0
+bill barr,4755,usa,justice,,0
+justice department,3785,usa,justice,,0
+indictment,3615,usa,justice,,0
+debates,3199,usa,justice,,0
+subpoenas,2910,usa,justice,,0
+amendment rights,2848,usa,justice,,0
+commission,2790,usa,justice,,0
+nypd,2641,usa,justice,,0
+collusion hoax,2332,usa,justice,,0
+william barr,2322,usa,justice,,0
+doj,2309,usa,justice,,0
+war powers resolution,2293,usa,justice,,0
+judiciary committee,2254,usa,justice,,0
+war powers,1721,usa,justice,,0
+sheriff,1539,usa,justice,,0
+circuit,1294,usa,justice,,0
+circuit court,1288,usa,justice,,0
+david kris,1288,usa,justice,,0
+ken starr,1267,usa,justice,,0
+michael horowitz,1265,usa,justice,,0
+rod rosenstein,1227,usa,justice,,0
+michael atkinson,1122,usa,justice,,0
+john roberts,1049,usa,justice,,0
+ruth bader ginsburg,922,usa,justice,,0
+george conway,794,usa,justice,,0
+juror bias,770,usa,justice,,0
+amy berman-jackson,616,usa,justice,,0
+loretta lynch,518,usa,justice,,0
+andrew weissmann,514,usa,justice,,0
+house judiciary,470,usa,justice,,0
+justin walker,450,usa,justice,,0
+bader ginsburg,438,usa,justice,,0
+michael mukasey,407,usa,justice,,0
+night house judiciary chairman,398,usa,justice,,0
+andy mccabe,390,usa,justice,,0
+william conley,375,usa,justice,,0
+lawrence vandyke,348,usa,justice,,0
+sally yates,347,usa,justice,,0
+barry berke,334,usa,justice,,0
+doj official,309,usa,justice,,0
+circuit court judges,281,usa,justice,,0
+mr. berke,279,usa,justice,,0
+ammendment,219,usa,justice,,0
+pardons/sentence,219,usa,justice,,0
+tom homan,208,usa,justice,,0
+doj/state,204,usa,justice,,0
+circuit judges,203,usa,justice,,0
+jessie liu,202,usa,justice,,0
+nypd officers,187,usa,justice,,0
+lung growths,179,usa,justice,,0
+circuit court rules,175,usa,justice,,0
+justice department misconduct,114,usa,justice,,0
+line prosecutors,110,usa,justice,,0
+juror questions,108,usa,justice,,0
+ban bill,104,usa,justice,,0
+cnn,6420,usa,left-media,,0
+chris wallace,4498,usa,left-media,,0
+chris matthews,1476,usa,left-media,,0
+paul krugman,1366,usa,left-media,,0
+rachel maddow,1241,usa,left-media,,0
+rate reporter,1064,usa,left-media,,0
+michael moore,1051,usa,left-media,,0
+van jones,958,usa,left-media,,0
+anderson cooper,908,usa,left-media,,0
+jim acosta,906,usa,left-media,,0
+maddow,699,usa,left-media,,0
+bill maher,500,usa,left-media,,0
+manu raju,478,usa,left-media,,0
+brian stelter,408,usa,left-media,,0
+antifa,384,usa,left-media,,0
+marianne williamson,374,usa,left-media,,0
+joy behar,369,usa,left-media,,0
+hanoi jane,351,usa,left-media,,0
+jeff zucker,348,usa,left-media,,0
+chris cuomo,347,usa,left-media,,0
+joe scarborough,340,usa,left-media,,0
+nyt,217,usa,left-media,,0
+john harwood,205,usa,left-media,,0
+jeffrey toobin,196,usa,left-media,,0
+maggie haberman,194,usa,left-media,,0
+twitter,50399,usa,media,,0
+hollywood,13391,usa,media,,0
+facebook,10699,usa,media,,0
+youtube,6760,usa,media,,0
+google,5082,usa,media,,0
+netflix,3223,usa,media,,0
+witch hunt,2829,usa,media,,0
+retweets,2684,usa,media,,0
+fb,2645,usa,media,,0
+instagram,1476,usa,media,,0
+geraldo,1100,usa,media,,0
+politico,962,usa,media,,0
+david wright,840,usa,media,,0
+glenn simpson,676,usa,media,,0
+hoax number,422,usa,media,,0
+jack dorsey,399,usa,media,,0
+jim cramer,385,usa,media,,0
+cramer,337,usa,media,,0
+swamp medias cover-up,319,usa,media,,0
+ratings drought,308,usa,media,,0
+establishment-press,274,usa,media,,0
+jon scott,266,usa,media,,0
+leftwing media mob tactic,261,usa,media,,0
+jeff jensen,242,usa,media,,0
+smackdown,228,usa,media,,0
+disinformation hoax number,202,usa,media,,0
+media hypocrisy,149,usa,media,,0
+swamp-press,137,usa,media,,0
+collusion hoax stories,102,usa,media,,0
+fox news reporter treason,101,usa,media,,0
+cnn/ny,98,usa,media,,0
+sara carter,345,usa,music,,0
+elvis presley,331,usa,music,,0
+freddie,304,usa,music,,0
+elton john,290,usa,music,,0
+nasa,989,usa,nasa,,0
+spangled banner,755,usa,nationalism,,0
+nato,2365,usa,nato,,0
+mike pence,337,usa,pence,,0
+phil haney,1990,usa,phil-haney,,0
+phillip haney,173,usa,phil-haney,,0
+poverty manufacturing wages,173,usa,poverty,,0
+militia,1996,usa,protest,,0
+militias,1562,usa,protest,,0
+san juan,486,usa,PuertoRico,,0
+blacks,2563,usa,race,,0
+martin luther,1903,usa,race,,0
+whites,1837,usa,race,,0
+supremacist,1810,usa,race,,0
+martin luther king jr.,1357,usa,race,,0
+malcolm,266,usa,race,,0
+dr. martin luther king jr.,213,usa,race,,0
+nigga,209,usa,race,,0
+race-baiting,207,usa,race,,0
+lives matter,184,usa,race,,0
+niggas,184,usa,race,,0
+howard stern,318,usa,radio,,0
+harvey weinstein,2952,usa,rape,,0
+weinstein,707,usa,rape,,0
+republicans,12811,usa,republicans,,0
+romney,11401,usa,republicans,romney,0
+mcconnell,8721,usa,republicans,mcconnell,0
+rudy giuliani,6988,usa,republicans,giuliani,0
+rudy,6723,usa,republicans,giuliani,0
+giuliani,6653,usa,republicans,giuliani,0
+mitch mcconnell,6469,usa,republicans,mcconnell,0
+lindsey graham,6282,usa,republicans,graham,0
+devin nunes,5186,usa,republicans,nunes,0
+graham,3966,usa,republicans,graham,0
+pompeo,3377,usa,republicans,pompeo,0
+ted cruz,2960,usa,republicans,cruz,0
+mitch,2853,usa,republicans,mcconnell,0
+cruz,2565,usa,republicans,cruz,0
+gop,2413,usa,republicans,,0
+bush,2276,usa,republicans,bush,0
+reagan,2273,usa,republicans,reagan,0
+rep,2233,usa,republicans,,0
+sessions,2064,usa,republicans,sessions,0
+john bolton,2043,usa,republicans,bolton,0
+jim jordan,2012,usa,republicans,,0
+pat cipollone,1970,usa,republicans,,0
+alan dershowitz,1933,usa,republicans,,0
+reps,1868,usa,republicans,,0
+doug collins,1831,usa,republicans,,0
+mike lee,1809,usa,republicans,,0
+steve bannon,1543,usa,republicans,bannon,0
+roger stone,1535,usa,republicans,,0
+kevin mccarthy,1517,usa,republicans,,0
+roger,1502,usa,republicans,,0
+mike rogers,1490,usa,republicans,,0
+mike flynn,1444,usa,republicans,,0
+ratcliffe,1444,usa,republicans,,0
+conway,1307,usa,republicans,,0
+rand paul,1286,usa,republicans,,0
+lindsey,1272,usa,republicans,graham,0
+bolton,1239,usa,republicans,bolton,0
+house republicans,1238,usa,republicans,,0
+kavanaugh,1234,usa,republicans,,0
+susan collins,1210,usa,republicans,,0
+gates,1153,usa,republicans,,0
+mike pompeo,1107,usa,republicans,pompeo,0
+mccain,1060,usa,republicans,mccain,0
+senate republicans,1025,usa,republicans,,0
+john ratcliffe,986,usa,republicans,,0
+meghan mccain,983,usa,republicans,mccain,0
+stone,977,usa,republicans,,0
+greg abbott,961,usa,republicans,,0
+brett kavanaugh,957,usa,republicans,,0
+kyle,920,usa,republicans,,0
+mark meadows,910,usa,republicans,,0
+republican,892,usa,republicans,,0
+ronald reagan,892,usa,republicans,reagan,0
+josh hawley,821,usa,republicans,,0
+dershowitz,793,usa,republicans,,0
+nikki haley,754,usa,republicans,,0
+murkowski,741,usa,republicans,,0
+john mccain,733,usa,republicans,mccain,0
+george papadopoulos,683,usa,republicans,,0
+michael cohen,671,usa,republicans,,0
+republican party,668,usa,republicans,,0
+mitt romney,641,usa,republicans,romney,0
+paul manafort,630,usa,republicans,,0
+louie gohmert,613,usa,republicans,,0
+joe digenova,603,usa,republicans,,0
+mike roman,568,usa,republicans,,0
+robert charles,546,usa,republicans,,0
+rick scott,529,usa,republicans,,0
+martha mcsally,502,usa,republicans,,0
+lindsay graham,459,usa,republicans,graham,0
+stephen miller,442,usa,republicans,,0
+ron johnson,427,usa,republicans,,0
+liz cheney,418,usa,republicans,,0
+deven nunes,406,usa,republicans,,0
+james baker,401,usa,republicans,,0
+michael roman,383,usa,republicans,,0
+gingrich,376,usa,republicans,,0
+john mcguire,362,usa,republicans,,0
+richard nixon,357,usa,republicans,,0
+pence,349,usa,republicans,pence,0
+lisa murkowski,343,usa,republicans,,0
+stephanie grisham,342,usa,republicans,,0
+tea party,341,usa,republicans,,0
+matt gaetz,325,usa,republicans,,0
+sarah sanders,323,usa,republicans,,0
+kelly loefner,322,usa,republicans,,0
+gaetz,317,usa,republicans,,0
+carly fiorina,314,usa,republicans,,0
+john dean,312,usa,republicans,,0
+jonathan winer,303,usa,republicans,,0
+rafiekian,301,usa,republicans,,0
+lee zeldin,298,usa,republicans,,0
+debbie lesko,293,usa,republicans,,0
+jeb,282,usa,republicans,,0
+tim morrison,275,usa,republicans,,0
+abby huntsman,269,usa,republicans,,0
+edgar hoover,268,usa,republicans,,0
+mike johnson,259,usa,republicans,,0
+george bush,252,usa,republicans,,0
+ben carson,241,usa,republicans,,0
+eisenhower,240,usa,republicans,,0
+anthony ornato,238,usa,republicans,,0
+peter navarro,231,usa,republicans,,0
+kevin brady,221,usa,republicans,,0
+mick mulvaney,221,usa,republicans,,0
+john james,211,usa,republicans,,0
+marsha blackburn,207,usa,republicans,,0
+kushner,206,usa,republicans,,0
+haley,203,usa,republicans,,0
+kay bailey hutchison,203,usa,republicans,,0
+pete hegseth,197,usa,republicans,,0
+college republicans,183,usa,republicans,,0
+roger stone jury foreman,289,usa,roger-stone,,0
+jury foreman,284,usa,roger-stone,,0
+silence stone,259,usa,roger-stone,,0
+stones trial,230,usa,roger-stone,,0
+aaron zelinsky,162,usa,roger-stone,,0
+tomeka hart,160,usa,roger-stone,,0
+henry greenberg,138,usa,roger-stone,,0
+adam jed,115,usa,roger-stone,,0
+roger stone democrat,114,usa,roger-stone,,0
+case stones lawyers,93,usa,roger-stone,,0
+sanctions,8491,usa,russia,,0
+sergei millian,579,usa,russia,,0
+nellie ohr,321,usa,russia,,0
+strzok-page docs,261,usa,russia,,0
+uranium scandal,260,usa,russia,,0
+edward snowden,191,usa,russia,,0
+snowflakes,1556,usa,segment,,0
+trump supporter,1406,usa,segment,,0
+trump supporters,702,usa,segment,,0
+truck-driving brothers,421,usa,segment,,0
+californians,325,usa,segment,,0
+taylor swift,831,usa,singer,,0
+taxpayer dollars,2717,usa,spending,,0
+tax cut,492,usa,spending,,0
+income tax,462,usa,spending,,0
+tax cutter,296,usa,spending,,0
+year payroll tax cut,266,usa,spending,,0
+dollar government contract,247,usa,spending,,0
+welfare budget$71b,197,usa,spending,,0
+governments purchases,112,usa,spending,,0
+chris steele,720,usa,sports,,0
+brandon brown,402,usa,sports,,0
+ryan newman,370,usa,sports,,0
+megan rapinoe,347,usa,sports,,0
+tom watson,286,usa,sports,,0
+josh roberts,256,usa,sports,,0
+world series,242,usa,sports,,0
+chris keating,211,usa,sports,,0
+lee smith,209,usa,sports,,0
+espn,182,usa,sports,,0
+dwyane wade,153,usa,sports,,0
+charleston,302,usa,supremacist,,0
+gitmo,1072,usa,terrorism,,0
+gregory timm,860,usa,terrorism,,0
+omar khadr,674,usa,terrorism,,0
+osama,302,usa,terrorism,,0
+world trade center,260,usa,terrorism,,0
+jihadist,253,usa,terrorism,,0
+president trump,68977,usa,trump,trump,0
+trump,46980,usa,trump,trump,0
+donald,22617,usa,trump,trump,0
+donald trump,17390,usa,trump,trump,0
+potus,13036,usa,trump,trump,0
+mar-a-lago,2224,usa,trump,trump,0
+barron,2114,usa,trump,,0
+ivanka,2039,usa,trump,ivanka,0
+donald j trump,1680,usa,trump,trump,0
+executive privilege,1526,usa,trump,,0
+barron trump,1121,usa,trump,,0
+#trump,1012,usa,trump,,0
+candidate trump,886,usa,trump,,0
+donald trump jr.,549,usa,trump,,0
+mr. trump,485,usa,trump,trump,0
+sotu speech,464,usa,trump,,0
+donald john trump,421,usa,trump,trump,0
+trump campaign,408,usa,trump,,0
+day president trump,385,usa,trump,,0
+whitehouse,378,usa,trump,,0
+presidents side,350,usa,trump,,0
+jared kushner,333,usa,trump,,0
+trump rally,332,usa,trump,,0
+president trump signs,310,usa,trump,,0
+trumps,289,usa,trump,,0
+situation room,260,usa,trump,,0
+brimerupting,256,usa,trump,,0
+years president trump,195,usa,trump,,0
+freedom,21015,usa,value,,0
+liberty,4437,usa,value,,0
+youngsters,253,usa,youth,,0
+college kids,224,usa,youth,,0
+america,124925,usa,,,0
+house,99320,usa,,,0
+senate,77871,usa,,,0
+state,64526,usa,,,0
+states,46533,usa,,,0
+u.s.,39400,usa,,,0
+virginia,37590,usa,,,0
+americans,23148,usa,,,0
+speaker,21128,usa,,,0
+washington,19210,usa,,,0
+american,18663,usa,,,0
+california,18507,usa,,,0
+senators,17348,usa,,,0
+iowa,14632,usa,,,0
+florida,14448,usa,,,0
+texas,12846,usa,,,0
+swamp,12685,usa,,,0
+carter,12548,usa,,,0
+durham,11844,usa,,,0
+senator,9887,usa,,,0
+congress,8901,usa,,,0
+pensacola,8464,usa,,,0
+richmond,7910,usa,,,0
+puerto,7866,usa,,,0
+representatives,7079,usa,,,0
+pennsylvania,7046,usa,,,0
+senate trial,6978,usa,,,0
+nyc,6722,usa,,,0
+governor,6716,usa,,,0
+milwaukee,6251,usa,,,0
+michigan,6047,usa,,,0
+usa,6035,usa,,,0
+congressman,5741,usa,,,0
+san francisco,3993,usa,,,0
+amazon,3854,usa,,,0
+minnesota,3724,usa,,,0
+arizona,3719,usa,,,0
+jeff van,3706,usa,,,0
+portland,3706,usa,,,0
+nbc,3655,usa,,,0
+utah,3588,usa,,,0
+harvard,3567,usa,,,0
+caucus,3552,usa,,,0
+nj,3532,usa,,,0
+va,3472,usa,,,0
+mass,3470,usa,,,0
+wisconsin,3426,usa,,,0
+chicago,3344,usa,,,0
+representative,3308,usa,,,0
+georgia,3260,usa,,,0
+illinois,3260,usa,,,0
+ohio,3255,usa,,,0
+dc,3193,usa,,,0
+agencies,3141,usa,,,0
+hershey,3106,usa,,,0
+carolina,2936,usa,,,0
+rep.,2625,usa,,,0
+ny,2624,usa,,,0
+subpoena,2568,usa,,,0
+capitol,2551,usa,,,0
+senate floor,2492,usa,,,0
+seattle,2475,usa,,,0
+house floor,2313,usa,,,0
+house judiciary committee,2312,usa,,,0
+houston,2307,usa,,,0
+alabama,2228,usa,,,0
+richard jewell,2197,usa,,,0
+kentucky,2153,usa,,,0
+la,2116,usa,,,0
+boston,2103,usa,,,0
+baltimore,2067,usa,,,0
+tucker,2038,usa,,,0
+austin,2015,usa,,,0
+sidney powell,1876,usa,,,0
+arkansas,1871,usa,,,0
+jacksonville,1841,usa,,,0
+eric ciaramella,1794,usa,,,0
+atlanta,1783,usa,,,0
+detroit,1708,usa,,,0
+project veritas,1689,usa,,,0
+heritage,1686,usa,,,0
+vegas,1667,usa,,,0
+tennessee,1656,usa,,,0
+hampshire,1574,usa,,,0
+oregon,1571,usa,,,0
+house speaker,1552,usa,,,0
+washington dc,1514,usa,,,0
+philadelphia,1499,usa,,,0
+oklahoma,1459,usa,,,0
+megan,1444,usa,,,0
+kansas,1437,usa,,,0
+boeing,1433,usa,,,0
+manhattan,1421,usa,,,0
+colorado,1419,usa,,,0
+hawaii,1404,usa,,,0
+lincoln,1398,usa,,,0
+miami,1384,usa,,,0
+jfk,1370,usa,,,0
+congressmen,1365,usa,,,0
+nixon,1255,usa,,,0
+indiana,1239,usa,,,0
+massachusetts,1224,usa,,,0
+duke,1221,usa,,,0
+ford,1181,usa,,,0
+nas pensacola,1132,usa,,,0
+malarkey,1058,usa,,,0
+babylon,1053,usa,,,0
+goldman,1017,usa,,,0
+u.s,1016,usa,,,0
+centrists,1010,usa,,,0
+coup update,1001,usa,,,0
+2a,1000,usa,,,0
+2ndamendment,1000,usa,,,0
+adjunctprofssr,1000,usa,,,0
+anti-gun,1000,usa,,,0
+edinburg,1000,usa,,,0
+flynnfighters,1000,usa,,,0
+kag2020,1000,usa,,,0
+obamagate,1000,usa,,,0
+palmvalley,1000,usa,,,0
+patriotsawakened,1000,usa,,,0
+realdonaldtrump,1000,usa,,,0
+riggedit,1000,usa,,,0
+saveamerica,1000,usa,,,0
+spygate,1000,usa,,,0
+states senate,1000,usa,,,0
+therightmelissa,1000,usa,,,0
+trumpn2020,1000,usa,,,0
+unitednotdivied,1000,usa,,,0
+wakeupamerica,1000,usa,,,0
+charlottesville,999,usa,,,0
+impunity,983,usa,,,0
+ranchers,977,usa,,,0
+memorial,976,usa,,,0
+bruce ohr,974,usa,,,0
+d.c.,971,usa,,,0
+defamation lawsuit,966,usa,,,0
+smollett,957,usa,,,0
+nh,954,usa,,,0
+cali,953,usa,,,0
+alexa,952,usa,,,0
+cipollone,947,usa,,,0
+clint eastwood,946,usa,,,0
+inspector generals,945,usa,,,0
+brooklyn,942,usa,,,0
+oprah,942,usa,,,0
+george washington,941,usa,,,0
+bureaucracy,936,usa,,,0
+homeland,935,usa,,,0
+louisiana,935,usa,,,0
+departure,929,usa,,,0
+dog-faced pony soldier,929,usa,,,0
+nc,922,usa,,,0
+stanford,904,usa,,,0
+senate majority leader,903,usa,,,0
+trey,901,usa,,,0
+maryland,891,usa,,,0
+sf,891,usa,,,0
+kanye,887,usa,,,0
+dallas,885,usa,,,0
+alaska,877,usa,,,0
+turley,870,usa,,,0
+sacramento,867,usa,,,0
+house counsel,858,usa,,,0
+nrc,854,usa,,,0
+dime,832,usa,,,0
+state sponsor,830,usa,,,0
+nike,829,usa,,,0
+plp,825,usa,,,0
+capitol hill,815,usa,,,0
+ups,813,usa,,,0
+liz,790,usa,,,0
+verge,787,usa,,,0
+wa,786,usa,,,0
+elvis,771,usa,,,0
+jeopardy,771,usa,,,0
+napolitano,767,usa,,,0
+newsom,760,usa,,,0
+taylor,760,usa,,,0
+columbia,753,usa,,,0
+blackburn,752,usa,,,0
+san diego,750,usa,,,0
+orleans,744,usa,,,0
+baby mama,740,usa,,,0
+isaiah,728,usa,,,0
+missouri,721,usa,,,0
+bradford,713,usa,,,0
+congresswoman,710,usa,,,0
+mississippi,709,usa,,,0
+blago,688,usa,,,0
+virginians,678,usa,,,0
+christopher,676,usa,,,0
+bill gates,675,usa,,,0
+san fran,654,usa,,,0
+microsoft,642,usa,,,0
+phoenix,640,usa,,,0
+jeff bezos,629,usa,,,0
+senate rules,624,usa,,,0
+nevada,622,usa,,,0
+rita wilson,599,usa,,,0
+elon,547,usa,,,0
+texans,543,usa,,,0
+battle creek,535,usa,,,0
+indians,515,usa,,,0
+kirk douglas,509,usa,,,0
+truth bombs,509,usa,,,0
+security threat,504,usa,,,0
+minneapolis,491,usa,,,0
+scott presler,465,usa,,,0
+salvation army,445,usa,,,0
+nebraska,435,usa,,,0
+alexander hamilton,434,usa,,,0
+mccarthyism,424,usa,,,0
+citizen journalist,421,usa,,,0
+richmond virginia,421,usa,,,0
+senator issues,413,usa,,,0
+virginias,413,usa,,,0
+wall street journal story,413,usa,,,0
+senate votes,400,usa,,,0
+unionists,395,usa,,,0
+banana republic,394,usa,,,0
+pillow founder,392,usa,,,0
+fda,388,usa,,,0
+atlantic,386,usa,,,0
+cadillac,386,usa,,,0
+congressional,385,usa,,,0
+puerto rican,385,usa,,,0
+epa,379,usa,,,0
+yale,376,usa,,,0
+plymouth,372,usa,,,0
+calgary,371,usa,,,0
+oakland,370,usa,,,0
+foundation whistleblowers,367,usa,,,0
+hancock,364,usa,,,0
+bronx,355,usa,,,0
+adam schlesinger,353,usa,,,0
+house pitches,352,usa,,,0
+swamp mistress,350,usa,,,0
+marshall,349,usa,,,0
+scale joint investigation,349,usa,,,0
+cleveland,344,usa,,,0
+washington d.c.,344,usa,,,0
+arlington,343,usa,,,0
+rosemont seneca,343,usa,,,0
+henderson,337,usa,,,0
+nottingham,333,usa,,,0
+l.a.,330,usa,,,0
+kfc,324,usa,,,0
+nashville,324,usa,,,0
+calif,316,usa,,,0
+wake county,314,usa,,,0
+huntington,313,usa,,,0
+pillow guys,309,usa,,,0
+samaritans,307,usa,,,0
+wyoming,304,usa,,,0
+berkeley,300,usa,,,0
+snerdley,297,usa,,,0
+beto,296,usa,,,0
+texas-08,295,usa,,,0
+chris smalls,291,usa,,,0
+subway thief thanks democrats,289,usa,,,0
+san antonio,285,usa,,,0
+azz,283,usa,,,0
+brighton,282,usa,,,0
+orlando,282,usa,,,0
+sabato,282,usa,,,0
+tucson,280,usa,,,0
+mypillow,277,usa,,,0
+bladen,274,usa,,,0
+paul pelosi jr.,274,usa,,,0
+tessa,273,usa,,,0
+abraham,272,usa,,,0
+duval,272,usa,,,0
+pittsburgh,272,usa,,,0
+mn,271,usa,,,0
+at&t,270,usa,,,0
+lsu-clemson,269,usa,,,0
+bacc,268,usa,,,0
+brandon van,268,usa,,,0
+usda,268,usa,,,0
+dakota,267,usa,,,0
+quinnipiac,267,usa,,,0
+jeremy peters,265,usa,,,0
+commander-in-chiefs trophy,262,usa,,,0
+cincinnati,259,usa,,,0
+uni,259,usa,,,0
+attention patriots,257,usa,,,0
+states congress,257,usa,,,0
+mile sea wall,256,usa,,,0
+cody pfister,255,usa,,,0
+house meeting,253,usa,,,0
+baloney,252,usa,,,0
+speech today,252,usa,,,0
+st. louis,252,usa,,,0
+tobacco,252,usa,,,0
+rednecks,250,usa,,,0
+signs phase,250,usa,,,0
+cameraman,249,usa,,,0
+mr johnson,249,usa,,,0
+thomas jefferson,249,usa,,,0
+american patriots,248,usa,,,0
+salvo,248,usa,,,0
+abraham lincoln,247,usa,,,0
+tech elites,247,usa,,,0
+disposition,246,usa,,,0
+house chairman,246,usa,,,0
+loyalists,246,usa,,,0
+policy record,246,usa,,,0
+leadership campaign,244,usa,,,0
+diagnosis,243,usa,,,0
+nations capital,241,usa,,,0
+pride flag,241,usa,,,0
+service deputy assistant director,240,usa,,,0
+street journal editorial,239,usa,,,0
+wampanoag,237,usa,,,0
+victim card,236,usa,,,0
+equifax,234,usa,,,0
+zac goldsmith,234,usa,,,0
+midlands,233,usa,,,0
+community standards,230,usa,,,0
+reasons house,230,usa,,,0
+state funeral,230,usa,,,0
+perth,227,usa,,,0
+disney,225,usa,,,0
+anti-mypillow,222,usa,,,0
+freedom day,222,usa,,,0
+albuquerque,220,usa,,,0
+hopkins,220,usa,,,0
+girl scout,214,usa,,,0
+usc,214,usa,,,0
+usa usa,212,usa,,,0
+virgina,212,usa,,,0
+honolulu,211,usa,,,0
+angeles,210,usa,,,0
+michael goodwin,208,usa,,,0
+senate committee,208,usa,,,0
+states senator,208,usa,,,0
+house hearings,206,usa,,,0
+john carter,205,usa,,,0
+rochester,204,usa,,,0
+states government,204,usa,,,0
+samoa,203,usa,,,0
+american heroes,201,usa,,,0
+pearl harbor remembrance day,201,usa,,,0
+orgeron,200,usa,,,0
+perjury trap,200,usa,,,0
+thomas paine,200,usa,,,0
+enemy media,198,usa,,,0
+hudson,198,usa,,,0
+az,194,usa,,,0
+anti-trump,193,usa,,,0
+noam chomsky,193,usa,,,0
+virginias capitol,193,usa,,,0
+fedex,192,usa,,,0
+roosevelt,192,usa,,,0
+typhus outbreak rats,189,usa,,,0
+koch,187,usa,,,0
+georgetown,185,usa,,,0
+libtard,185,usa,,,0
+capitol building,184,usa,,,0
+jeffrey bezos,183,usa,,,0
+john maynard keynes,183,usa,,,0
+andrew johnson,182,usa,,,0
+jfk jr.,182,usa,,,0
+ny jfk,182,usa,,,0
+senate acquittal,182,usa,,,0
+libtards,181,usa,,,0
+albany,180,usa,,,0
+chairman senate judiciary,179,usa,,,0
+daria ortiz,177,usa,,,0
+john kerrylogan,177,usa,,,0
+dempanic,176,usa,,,0
+david boreanaz,175,usa,,,0
+alan merrill,166,usa,,,0
+terrence mcnally,166,usa,,,0
+oprah hollywood,160,usa,,,0
+state swamp officials,156,usa,,,0
+rationing plan,152,usa,,,0
+loretta lynch-bill clinton,149,usa,,,0
+arizonaa,143,usa,,,0
+disney measles,135,usa,,,0
+palm beach jail,135,usa,,,0
+subpoena democrats,134,usa,,,0
+trial prosecutors,134,usa,,,0
+city council ordinance,129,usa,,,0
+candi cdebaca,120,usa,,,0
+veterans/patriots,110,usa,,,0
+bill gates charity cash,104,usa,,,0
+multi agency taskforce,104,usa,,,0
+oversight mandate,104,usa,,,0
+tanker vet,101,usa,,,0
+patrick carroll,95,usa,,,0
+richard strauss,93,usa,,,0
+interagency turf war,90,usa,,,0
+allentown march,89,usa,,,0
+pittsburgh march,89,usa,,,0
+jorge rivas,86,usa,,,0
+peter nygard,341,,child-abuse,,0
+jesus,11577,,christian,,0
+christian,10841,,christian,,0
+church,7613,,christian,,0
+christianity,6602,,christian,,0
+christians,4259,,christian,,0
+christ,3754,,christian,,0
+jesus christ,3129,,christian,,0
+catholic,2313,,christian,,0
+pope,1682,,christian,,0
+hosanna,513,,christian,,0
+climate change,14425,,climate change,,1
+greta,13281,,climate change,,1
+air,10499,,climate change,,1
+water,9853,,climate change,,1
+planet,7754,,climate change,,1
+animals,6898,,climate change,,0
+climate,6761,,climate change,,1
+energy,6516,,climate change,,1
+humanity,4621,,climate change,,1
+warming,4179,,climate change,,1
+environment,3773,,climate change,,1
+earth,3653,,climate change,,1
+nature,3520,,climate change,,1
+ice,3322,,climate change,,1
+cc,3238,,climate change,,1
+trees,2909,,climate change,,0
+bushfires,2562,,climate change,,0
+waters,2423,,climate change,,0
+coal,2252,,climate change,,0
+greta thunberg,2105,,climate change,,1
+fuel,1772,,climate change,,1
+electricity,1763,,climate change,,1
+climate crisis,1756,,climate change,,1
+animal,1570,,climate change,,0
+rebellion,1552,,climate change,,1
+emissions,1547,,climate change,,1
+earthquake,1433,,climate change,,0
+immigration,1426,,climate change,,1
+mass immigration,1426,,climate change,,1
+migration,1426,,climate change,,1
+species,1412,,climate change,,0
+hurricane,1407,,climate change,,0
+rinos,1388,,climate change,,0
+greens,1166,,climate change,,1
+temperatures,1071,,climate change,,1
+temperature,1029,,climate change,,1
+climate emergency,961,,climate change,,1
+climate refugees,847,,climate change,,1
+climate activist,687,,climate change,,1
+climate policy,511,,climate change,,1
+climate change activists,495,,climate change,,1
+carbon footprint,450,,climate change,,1
+oxygen,441,,climate change,,1
+climate alarmists,440,,climate change,,1
+environmentalists,419,,climate change,,1
+climate change hoax,402,,climate change,,1
+climate activists,349,,climate change,,1
+environmentalist regulations,321,,climate change,,1
+climate hoax,317,,climate change,,1
+shores,308,,climate change,,1
+co2,307,,climate change,,1
+carbon emissions,304,,climate change,,1
+penguin,266,,climate change,,0
+whale,266,,climate change,,0
+beaches,257,,climate change,,0
+climate science,239,,climate change,,1
+magnitude earthquake,239,,climate change,,0
+cooling,236,,climate change,,0
+climate experts,195,,climate change,,1
+habitat,195,,climate change,,0
+climate alarmism,194,,climate change,,1
+air pollution,192,,climate change,,1
+coal plants,191,,climate change,,0
+climate deal,190,,climate change,,0
+polluters,188,,climate change,,1
+acid rain,184,,climate change,,0
+emissions decline,161,,climate change,,1
+war,41443,,conflict,,1
+death,28256,,conflict,,1
+coup,18871,,conflict,,1
+attack,18816,,conflict,,1
+threat,16670,,conflict,,1
+violence,16555,,conflict,,1
+enemy,13475,,conflict,,1
+fight,9592,,conflict,,1
+blood,7057,,conflict,,1
+casualties,6145,,conflict,,1
+deaths,5562,,conflict,,1
+flight,5299,,conflict,,1
+conflict,4951,,conflict,,1
+attacks,3003,,conflict,,1
+regime change,432,,conflict,,1
+mercenaries,390,,conflict,,1
+fish tank cleaner,8842,,corona-virus,,1
+hospital,7584,,corona-virus,,1
+doctors,4750,,corona-virus,,1
+doctor,4407,,corona-virus,,1
+wuhan,4148,,corona-virus,,1
+virus,3848,,corona-virus,,1
+patients,3199,,corona-virus,,1
+hospitals,2994,,corona-virus,,1
+vaccines,2340,,corona-virus,,1
+nurses,2206,,corona-virus,,1
+nurse,1976,,corona-virus,,1
+azithromycin,1714,,corona-virus,,1
+nizamuddin,1195,,corona-virus,,0
+aquarium cleaner,1113,,corona-virus,,1
+ventilator shortage,1085,,corona-virus,,1
+treatment drug,1049,,corona-virus,,1
+food supply workers,1027,,corona-virus,,1
+hydroxy,1027,,corona-virus,,1
+pandemic relief package,965,,corona-virus,,1
+home order,942,,corona-virus,,1
+sulfate,888,,corona-virus,,1
+coronavirus,832,,corona-virus,,1
+emergency approval,782,,corona-virus,,0
+wage subsidy,771,,corona-virus,,1
+containment policies,749,,corona-virus,,1
+flu samples,749,,corona-virus,,1
+2019-nCoV,748,,corona-virus,,1
+COVIDー19 ,748,,corona-virus,,1
+nCoV,748,,corona-virus,,1
+zinc sulfate,747,,corona-virus,,1
+emergency field hospital,715,,corona-virus,,1
+ventilator,713,,corona-virus,,1
+stimulus deal,651,,corona-virus,,1
+coronavirus,617,,corona-virus,,1
+herd immunity,617,,corona-virus,,1
+pandemic,609,,corona-virus,,1
+virus,608,,corona-virus,,1
+ventilator,583,,corona-virus,,1
+ventilators,583,,corona-virus,,1
+emergency deliveries,578,,corona-virus,,1
+flight closings,578,,corona-virus,,1
+coronavirus test,574,,corona-virus,,1
+communist party lies,564,,corona-virus,,1
+corona,561,,corona-virus,,1
+stimulus,557,,corona-virus,,1
+board-certified family practitioner,553,,corona-virus,,1
+hospitals,550,,corona-virus,,1
+cloth face,541,,corona-virus,,1
+relief,540,,corona-virus,,1
+pandemic relief,536,,corona-virus,,1
+mask sterilization equipment,532,,corona-virus,,1
+line health,530,,corona-virus,,1
+doomsday,529,,corona-virus,,1
+textiles companies,524,,corona-virus,,1
+trial drugs,508,,corona-virus,,1
+zithromax,508,,corona-virus,,1
+visors,499,,corona-virus,,1
+telehealth services,495,,corona-virus,,1
+zelenko,489,,corona-virus,,1
+mask/face,483,,corona-virus,,1
+fatality numbers,475,,corona-virus,,1
+swine flu debacle,474,,corona-virus,,1
+hygiene conditions,445,,corona-virus,,1
+corona,441,,corona-virus,,1
+business loan program,439,,corona-virus,,1
+response package,426,,corona-virus,,1
+hospital masks,422,,corona-virus,,1
+pandemic-fueled,414,,corona-virus,,1
+malaria,394,,corona-virus,,1
+outbreak,389,,corona-virus,,1
+diseases scientist,385,,corona-virus,,1
+decontamination,378,,corona-virus,,1
+emergency authority,375,,corona-virus,,1
+front line responders,365,,corona-virus,,1
+grocery store workers,359,,corona-virus,,1
+save lives,359,,corona-virus,,1
+social distancing,359,,corona-virus,,1
+social-distancing,359,,corona-virus,,1
+contagion/low lethality,350,,corona-virus,,1
+mask manufacturer,348,,corona-virus,,1
+masks,344,,corona-virus,,1
+masks/day,344,,corona-virus,,1
+droplet transmission,340,,corona-virus,,1
+face-hugger,339,,corona-virus,,1
+testing problem,334,,corona-virus,,1
+wuhan/wenzhou,333,,corona-virus,,1
+healthcare system,332,,corona-virus,,1
+scale disaster,328,,corona-virus,,1
+mask stockpile,318,,corona-virus,,1
+cholera epidemics,315,,corona-virus,,1
+mass shutdowns,306,,corona-virus,,1
+ppe equipment,300,,corona-virus,,1
+hospitals/beds,291,,corona-virus,,1
+immunity certificates,290,,corona-virus,,1
+virus outbreak,288,,corona-virus,,1
+epidemiologists,286,,corona-virus,,1
+healthcare heroes,282,,corona-virus,,1
+mortuaries,279,,corona-virus,,1
+hospital test,271,,corona-virus,,1
+disaster declarations,267,,corona-virus,,1
+epidemiologist gates,263,,corona-virus,,1
+immunity strategy,262,,corona-virus,,1
+state health depts,262,,corona-virus,,1
+ipe,256,,corona-virus,,1
+ppe,256,,corona-virus,,1
+ppes,256,,corona-virus,,1
+mass testing,246,,corona-virus,,1
+fearmongering hoax,239,,corona-virus,,1
+lock-downs,234,,corona-virus,,1
+death projections,232,,corona-virus,,1
+health crisis,231,,corona-virus,,1
+drug combination,230,,corona-virus,,1
+media over-reaction,230,,corona-virus,,1
+#vaccine,228,,corona-virus,,1
+fishbowl cleaner,228,,corona-virus,,1
+doom train,216,,corona-virus,,1
+face-masks,213,,corona-virus,,1
+microchip technology,213,,corona-virus,,1
+chloroquine,209,,corona-virus,,1
+hydroxychloroquine-azithromycin,202,,corona-virus,,1
+death predictions,192,,corona-virus,,1
+doom fauci,192,,corona-virus,,1
+immunity passports,186,,corona-virus,,1
+population reduction agenda,185,,corona-virus,,1
+virus lies,184,,corona-virus,,1
+corona jihad,183,,corona-virus,,1
+5g equipment,181,,corona-virus,,1
+cruise ship response,180,,corona-virus,,1
+healthcare capacity,180,,corona-virus,,1
+doomsday media predictions,179,,corona-virus,,1
+doomsday model,179,,corona-virus,,1
+national emergency,179,,corona-virus,,1
+pandemic playbook,179,,corona-virus,,1
+health nightmare,178,,corona-virus,,1
+test kits,177,,corona-virus,,1
+corona virus tests,176,,corona-virus,,1
+hydroxychloroquine-deniers,176,,corona-virus,,1
+kits,176,,corona-virus,,1
+motion death,176,,corona-virus,,1
+sulfate 220mg,175,,corona-virus,,1
+post-coronavirus,169,,corona-virus,,1
+corona-scheme,164,,corona-virus,,1
+healthcare rations,164,,corona-virus,,1
+medicine rations,164,,corona-virus,,1
+treatement,164,,corona-virus,,1
+treatment ,164,,corona-virus,,1
+blood shortage,163,,corona-virus,,1
+out-patient treatment regimen,162,,corona-virus,,1
+c19,161,,corona-virus,,1
+lockdown,161,,corona-virus,,1
+test-kits,161,,corona-virus,,1
+health catastrophe,160,,corona-virus,,1
+test swabs,159,,corona-virus,,1
+shutdown response,158,,corona-virus,,1
+crisis bill,154,,corona-virus,,1
+pandemic payraise,154,,corona-virus,,1
+flu,153,,corona-virus,,1
+mortality factor,128,,corona-virus,,1
+virus,128,,corona-virus,,1
+health doctors,125,,corona-virus,,1
+surveillance-state apparatchik,125,,corona-virus,,1
+flatten the curve,100,,corona-virus,,1
+ghebreyesus,100,,corona-virus,,1
+illprepared,100,,corona-virus,,1
+incompetent,100,,corona-virus,,1
+incubation,100,,corona-virus,,1
+isolation,100,,corona-virus,,1
+medical officer,100,,corona-virus,,1
+mental health,100,,corona-virus,,1
+respiratory,100,,corona-virus,,1
+SARS,100,,corona-virus,,1
+shortage,100,,corona-virus,,1
+shortages,100,,corona-virus,,1
+symptoms,100,,corona-virus,,1
+unprepared,100,,corona-virus,,1
+world health organisation,100,,corona-virus,,1
+coronavirus,86,,corona-virus,,1
+self-isolate,79,,corona-virus,,1
+covid19,37,,corona-virus,,1
+covid-19,36,,corona-virus,,1
+corona deaths,26,,corona-virus,,1
+corona patients,26,,corona-virus,,1
+corona cases,25,,corona-virus,,1
+coronavirus,23,,corona-virus,,1
+coronavirus-,23,,corona-virus,,1
+corona-2020,15,,corona-virus,,1
+coronarvirusoutbreak,15,,corona-virus,,1
+covid,14,,corona-virus,,1
+corona flu,13,,corona-virus,,1
+#coronaoutbreak,11,,corona-virus,,1
+coronaoutbreak,11,,corona-virus,,1
+coronavirus-hit,9,,corona-virus,,1
+corona-chaos,8,,corona-virus,,1
+coronaviruseffects,8,,corona-virus,,1
+corona vaccine development,6,,corona-virus,,1
+corona-virus,6,,corona-virus,,1
+sars-covid19,1,,corona-virus,,1
+corruption,34677,,corruption,,1
+corruption cases,242,,corruption,,1
+abuse,33955,,crime,,0
+crime,30439,,crime,,1
+crimes,23705,,crime,,1
+shot,18777,,crime,,1
+prison,16456,,crime,,1
+jail,12723,,crime,,1
+treason,12516,,crime,,1
+fraud,12464,,crime,,0
+murder,11523,,crime,,0
+criminals,10847,,crime,,1
+gangs,8247,,crime,,1
+assault,7195,,crime,,1
+bribery,7060,,crime,,1
+gang,6357,,crime,,1
+weapon,4784,,crime,,1
+shooter,4573,,crime,,1
+trafficking,4533,,crime,,1
+assassination,4002,,crime,,1
+killing,3720,,crime,,1
+shooting,3338,,crime,,1
+arsonists,2071,,crime,,1
+murders,2068,,crime,,1
+arson,1974,,crime,,1
+murderer,1958,,crime,,1
+massacre,1851,,crime,,1
+misdemeanors,1850,,crime,,1
+rapes,1829,,crime,,0
+sex trafficking,1631,,crime,,0
+murderers,1558,,crime,,1
+drug cartels,914,,crime,,0
+mafia,733,,crime,,0
+knife crime,462,,crime,,1
+abuse report,455,,crime,,0
+counter-narcotics operations,247,,crime,,1
+deal,32827,,deal,,0
+troops,16740,,defense,,1
+missiles,13552,,defense,,1
+soldiers,11401,,defense,,1
+defense,9117,,defense,,1
+army,8681,,defense,,1
+weapons,8225,,defense,,1
+missile,8096,,defense,,1
+space,7600,,defense,,1
+arms,6805,,defense,,1
+battle,6197,,defense,,1
+wars,5677,,defense,,1
+commander,4537,,defense,,1
+navy,2430,,defense,,1
+air force,1888,,defense,,1
+world war,1888,,defense,,1
+money,56046,,economy,,1
+job,35608,,economy,,1
+economy,31418,,economy,,1
+jobs,26446,,economy,,1
+trade deal,15419,,economy,,1
+business,12212,,economy,,1
+taxes,10666,,economy,,1
+trade,8670,,economy,,1
+crisis,8270,,economy,,1
+taxpayers,7154,,economy,,1
+unemployment,6873,,economy,,1
+companies,6512,,economy,,1
+credit,6055,,economy,,1
+poverty,5025,,economy,,1
+bank,4847,,economy,,1
+oil,4831,,economy,,1
+wages,4797,,economy,,1
+farmers,4682,,economy,,1
+stock market,4285,,economy,,1
+debt,4166,,economy,,1
+rents,4166,,economy,,1
+tax dollars,4056,,economy,,1
+budget,3862,,economy,,1
+trade deals,3833,,economy,,1
+banks,2930,,economy,,1
+unemployment rate,2838,,economy,,1
+capitalism,2803,,economy,,1
+economics,1690,,economy,,1
+recession,1677,,economy,,1
+farmer,1535,,economy,,1
+employment,1389,,economy,,1
+stock transactions,720,,economy,,0
+school,16007,,education,,1
+students,15182,,education,,1
+schools,9760,,education,,1
+college,7687,,education,,1
+student,7521,,education,,1
+education,6755,,education,,1
+teacher,3825,,education,,1
+teachers,3487,,education,,1
+universities,2847,,education,,1
+education policies,404,,education,,1
+educators,235,,education,,1
+election,66802,,election,,1
+campaign,47127,,election,,1
+voters,36054,,election,,1
+vote,27500,,election,,1
+candidate,19155,,election,,0
+votes,17859,,election,,0
+democracy,16608,,election,,1
+debate,16386,,election,,1
+poll,15752,,election,,1
+elections,15003,,election,,1
+voter,11429,,election,,1
+race,11049,,election,,1
+polls,10008,,election,,1
+voter fraud,3716,,election,,1
+electorate,2453,,election,,1
+ballot,2233,,election,,1
+election results,1905,,election,,1
+leadership election,246,,election,,1
+gas,3403,,energy,,1
+wind,2929,,energy,,1
+gas company,1522,,energy,,1
+greenpeace,300,,env,,1
+family,46165,,family,,1
+families,16142,,family,,1
+mother,11115,,family,,1
+daughter,10958,,family,,1
+husband,9927,,family,,1
+babies,9775,,family,,1
+baby,9709,,family,,1
+dad,8881,,family,,1
+mom,5752,,family,,0
+fathers,3141,,family,,1
+family members,1874,,family,,1
+pregnancy,477,,family,,1
+africa,4493,,fp-africa,FP-AF,1
+biafra,491,,fp-africa,FP-AF,0
+chad,235,,fp-africa,FP-AF,0
+armenian,273,,fp-armenia,FP-CA,0
+asians,427,,fp-asia,FP-EA,1
+australia,15102,,fp-australia,FP-AU,1
+sydney,1944,,fp-australia,FP-AU,1
+bahrain,212,,fp-bahrain,FP-ME,1
+myanmar,288,,fp-burma,FP-SEA,0
+Zhao Lijian,100,,fp-china,FP-EA,0
+egypt,1674,,fp-egypt,FP-ME,0
+ethiopia,344,,fp-ethiopia,FP-AF,0
+davos,6330,,fp-globalists,FP-GLO,0
+globalists,1442,,fp-globalists,FP-GLO,0
+haiti,1419,,fp-haiti,FP-LA,1
+kong,3578,,fp-hongkong,FP-EA,0
+india,9857,,fp-india,FP-SA,1
+hindus,3756,,fp-india,FP-SA,1
+delhi,3163,,fp-india,FP-SA,1
+bjp,1742,,fp-india,FP-SA,1
+modi,832,,fp-india,FP-SA,1
+maulana saad,639,,fp-india,FP-SA,0
+maharashtra,430,,fp-india,FP-SA,1
+rahul gandhi,302,,fp-india,FP-SA,1
+karnataka,300,,fp-india,FP-SA,1
+assam,299,,fp-india,FP-SA,0
+minister modi,296,,fp-india,FP-SA,0
+gujarat,292,,fp-india,FP-SA,1
+tahir hussain,285,,fp-india,FP-SA,1
+hyderabad,256,,fp-india,FP-SA,0
+tableeghi,236,,fp-india,FP-SA,0
+ratan,179,,fp-india,FP-SA,0
+ankit sharma,155,,fp-india,FP-SA,0
+indonesia,514,,fp-indonesia,FP-SEA,0
+israel,20906,,fp-israel,FP-ME,0
+jerusalem,3213,,fp-israel,FP-ME,1
+gaza,2469,,fp-israel,FP-ME,1
+palestine,2363,,fp-israel,FP-ME,1
+netanyahu,1259,,fp-israel,FP-ME,1
+apartheid,1020,,fp-israel,FP-ME,1
+palestinians,569,,fp-israel,FP-ME,1
+bethlehem,565,,fp-israel,FP-ME,1
+benjamin netanyahu,367,,fp-israel,FP-ME,0
+hebron,310,,fp-israel,FP-ME,1
+hebrew,284,,fp-israel,FP-ME,0
+apartheid state,219,,fp-israel,FP-ME,1
+jordan,2793,,fp-jordan,FP-ME,1
+kazakhs,305,,fp-kazakhstan,FP-CA,1
+kuwait,481,,fp-kuwait,FP-ME,0
+beirut,288,,fp-lebanon,FP-ME,1
+benghazi,6970,,fp-libya,FP-AF,0
+libya,4855,,fp-libya,FP-AF,1
+gaddafi,1022,,fp-libya,FP-AF,0
+tripoli,350,,fp-libya,FP-AF,0
+#benghazi,296,,fp-libya,FP-AF,1
+qaddafi,185,,fp-libya,FP-AF,1
+sect,239,,fp-me,FP-ME,1
+nigeria,4021,,fp-nigeria,FP-AF,1
+nigerian,246,,fp-nigeria,FP-AF,1
+pakistan,6400,,fp-pakistan,FP-SA,0
+khan,1746,,fp-pakistan,FP-SA,1
+jinnah,276,,fp-pakistan,FP-SA,0
+qatar,2479,,fp-qatar,FP-ME,0
+jamal khashoggi,186,,fp-saudi,FP-ME,1
+singapore,423,,fp-singapore,FP-SEA,1
+sudan,466,,fp-sudan,FP-AF,0
+syria,6955,,fp-syria,FP-ME,1
+#syria,668,,fp-syria,FP-ME,1
+damascus,571,,fp-syria,FP-ME,1
+turkey,3638,,fp-turkey,FP-WA,1
+erdogan,742,,fp-turkey,FP-WA,1
+turkeys,281,,fp-turkey,FP-WA,1
+vietnam,1897,,fp-vietnam,FP-SEA,0
+yemen,1718,,fp-yemen,FP-ME,0
+gender,2657,,gender,,1
+government,44332,,government,,1
+daily briefings,100,,government,,1
+guns,15560,,gun control,,1
+gun,10399,,gun control,,1
+shootings,1524,,gun control,,1
+filth,103,,hate,,1
+pigs,103,,hate,,1
+hate crime,1090,,hate-crime,,1
+coverage,6903,,health,,1
+health,6553,,health,,1
+cancer,5872,,health,,1
+healthcare,5313,,health,,1
+drugs,5013,,health,,1
+disease,2301,,health,,1
+medicine,1995,,health,,1
+derangement syndrome,1816,,health,,0
+illness,1707,,health,,1
+surgery,1691,,health,,1
+injuries,1602,,health,,1
+health plans,423,,health,,1
+overdose,390,,health,,1
+meth incident,339,,health,,1
+meth overdose situation,339,,health,,1
+history,52326,,history,,1
+slavery,2796,,human-rights,,0
+genocide,2687,,human-rights,,1
+persecution,2073,,human-rights,,0
+press freedom,414,,human-rights,,0
+socialism,13052,,ideology,,1
+leftists,8885,,ideology,,1
+left,5666,,ideology,,1
+socialists,5548,,ideology,,1
+libs,5203,,ideology,,1
+communism,4497,,ideology,,1
+communist,3772,,ideology,,1
+communists,3052,,ideology,,1
+hitler,2862,,ideology,,1
+lefties,2515,,ideology,,1
+feminists,2233,,ideology,,1
+fascists,2060,,ideology,,1
+fascism,2005,,ideology,,1
+liberalism,1777,,ideology,,1
+commie,1510,,ideology,,1
+citizens,30490,,immigration,,1
+aliens,10580,,immigration,,1
+immigrants,10472,,immigration,,1
+refugee,9603,,immigration,,1
+refugees,9603,,immigration,,1
+immigration,9328,,immigration,,1
+border,8996,,immigration,,1
+migrants,8878,,immigration,,1
+borders,6221,,immigration,,1
+citizenship,6218,,immigration,,1
+illegals,3016,,immigration,,1
+migration,1408,,immigration,,1
+immigration system,506,,immigration,,1
+immigration laws,426,,immigration,,1
+immigration policies,370,,immigration,,1
+immigration security,136,,immigration,,1
+refugee,2306,,immigration ,,1
+foreigners,2214,,immigration ,,1
+intelligence,7198,,intelligence,,1
+intel,2961,,intelligence,,1
+muslims,8632,,islam,,1
+islam,6974,,islam,,1
+hijab,1894,,islam,,1
+mosque,1873,,islam,,1
+allah,1410,,islam,,1
+mosques,1248,,islam,,1
+islamists,1157,,islam,,1
+islamic,1115,,islam,,1
+non-muslims,362,,islam,,1
+arab,319,,islam,,1
+sharia law,241,,islam,,1
+jews,5568,,jews,,1
+antisemitism,4029,,jews,,1
+anti-semitism,3798,,jews,,1
+anti-semite,1806,,jews,,1
+holocaust,1572,,jews,,1
+auschwitz,1263,,jews,,1
+antisemite,1011,,jews,,1
+hanukkah,594,,jews,,0
+zionism,514,,jews,,1
+zionist,514,,jews,,1
+hebrew israelites,443,,jews,,1
+jewish,258,,jews,,1
+menorah,239,,jews,,0
+#auschwitz,215,,jews,,1
+anti semite,204,,jews,,1
+evidence,52932,,justice,,1
+law,48995,,justice,,1
+court,43735,,justice,,1
+investigation,43335,,justice,,1
+witnesses,28506,,justice,,1
+trial,28188,,justice,,1
+justice,27387,,justice,,1
+bill,25772,,justice,,1
+police,25187,,justice,,1
+rights,23684,,justice,,1
+attorney,17775,,justice,,1
+judge,13327,,justice,,1
+witness,12336,,justice,,1
+whistleblower,12300,,justice,,1
+laws,11982,,justice,,1
+testimony,11162,,justice,,1
+rule,10621,,justice,,1
+collusion,10349,,justice,,1
+cops,10330,,justice,,1
+judges,9724,,justice,,1
+lawyers,9394,,justice,,1
+lawsuit,8283,,justice,,1
+courts,7107,,justice,,1
+law enforcement,6349,,justice,,1
+charges,6108,,justice,,1
+prosecution,5271,,justice,,1
+legislation,5045,,justice,,1
+arrests,4794,,justice,,1
+jury,2791,,justice,,1
+judiciary,2631,,justice,,1
+sentencing,2622,,justice,,1
+justice system,2353,,justice,,1
+bailout,393,,justice,,0
+police powers,349,,justice,,1
+homosexuality,450,,lgbt,,0
+marxists,654,,marxism,,1
+karl,605,,marxism,,1
+karl marx,213,,marxism,,1
+media,82729,,media,,1
+press,14086,,media,,1
+journalists,13852,,media,,1
+propaganda,12218,,media,,1
+narrative,10692,,media,,1
+journalist,10445,,media,,1
+hoax,9787,,media,,1
+conspiracy,8147,,media,,1
+reporters,8072,,media,,1
+mainstream media,6098,,media,,1
+news media,5601,,media,,1
+actor,5163,,media,,1
+journalism,5025,,media,,1
+internet,4593,,media,,1
+meme,3820,,media,,1
+censorship,3135,,media,,1
+conspiracy theory,2994,,media,,1
+radio,2684,,media,,1
+disinformation,2456,,media,,1
+trolls,2437,,media,,1
+botnet,1499,,media,,1
+bots,1499,,media,,1
+troll,1383,,media,,1
+flashmob,231,,media,,1
+media mob,231,,media,,1
+deceived,100,,media,,1
+deceiver,100,,media,,1
+disinformation,100,,media,,1
+misinformation,100,,media,,1
+mislead,100,,media,,1
+misled,100,,media,,1
+phone intercepts,249,,mh-17,,1
+minorities,3710,,minorities,,1
+minority,3361,,minorities,,1
+nation,30351,,nationalism,,1
+patriot,13651,,nationalism,,1
+flag,13215,,nationalism,,1
+patriots,10582,,nationalism,,1
+flags,4398,,nationalism,,1
+county,4395,,nationalism,,1
+independence,4333,,nationalism,,1
+patriotism,1864,,nationalism,,1
+nationalism,1424,,nationalism,,1
+nazis,3263,,nazism,,1
+nazi,1180,,nazism,,1
+nazism,283,,nazism,,1
+adolf hitler,269,,nazism,,1
+heil hitler,90,,nazism,,1
+homelessness,3339,,poverty,,1
+food bank,1755,,poverty,,1
+food banks,1755,,poverty,,1
+food stamps,1755,,poverty,,1
+starvation,424,,poverty,,1
+food stamp rule,355,,poverty,,1
+power,53992,,power,,1
+rally,33930,,protest,,1
+protesters,14537,,protest,,1
+crowd,12275,,protest,,1
+protests,10943,,protest,,1
+protest,8579,,protest,,1
+protestors,6598,,protest,,1
+activist,6169,,protest,,1
+change,6032,,protest,,1
+petition,6030,,protest,,1
+strike,5975,,protest,,1
+activists,5943,,protest,,1
+revolution,5728,,protest,,1
+crowds,3275,,protest,,1
+resistance,3233,,protest,,1
+riots,2643,,protest,,1
+protester,2248,,protest,,1
+rallies,2244,,protest,,1
+radicals,1559,,protest,,1
+masses,1519,,protest,,1
+demonstration,1422,,protest,,1
+riot,1209,,protest,,1
+uprisings,209,,protest,,1
+riots today,175,,protest,,1
+railway blockade,88,,protest,,1
+racism,13366,,race,,1
+racists,3877,,race,,1
+supremacists,2376,,race,,1
+antifa,316,,race,,1
+race war,316,,race,,1
+god,33898,,religion,,1
+christmas,25037,,religion,,0
+hell,24370,,religion,,0
+faith,10545,,religion,,0
+prayers,8477,,religion,,0
+religion,7955,,religion,,0
+prayer,6720,,religion,,0
+devil,3088,,religion,,0
+satan,2674,,religion,,0
+player,1737,,religion,,0
+sin,1546,,religion,,0
+angels,1423,,religion,,0
+sins,1406,,religion,,0
+russia,35621,,russia,,1
+julian assange,4748,,russia,,0
+putin,3662,,russia,,1
+oligarch,1418,,russia,,1
+vladimir putin,1053,,russia,,1
+moscow,1000,,russia,,1
+ussr,788,,russia,,1
+russian,575,,russia,,1
+weaponization,487,,russia,,1
+oligarchs,431,,russia,,1
+medvedev,343,,russia,,1
+fsb,284,,russia,,1
+gru,284,,russia,,1
+kgb,284,,russia,,1
+russia russia russia,269,,russia,,1
+audit chamber,245,,russia,,1
+vladimir,214,,russia,,1
+pravda,199,,russia,,1
+security,16789,,security,,1
+women,42177,,segment,,1
+children,41718,,segment,,1
+woman,41498,,segment,,1
+men,33401,,segment,,1
+kids,24727,,segment,,1
+child,21951,,segment,,1
+girls,15569,,segment,,1
+girl,15562,,segment,,1
+parents,11815,,segment,,1
+establishment,6798,,segment,,1
+elites,4921,,segment,,1
+civilians,4678,,segment,,1
+scientists,4567,,segment,,1
+adults,4481,,segment,,1
+prostitutes,515,,sex,,1
+sex offences,480,,sex,,1
+sexuality,427,,sex,,0
+prostitute,420,,sex,,0
+sex offender,403,,sex,,1
+sex trafficking equivalent,402,,sex,,0
+george soros,6650,,soros,,1
+george,5700,,soros,,1
+tax,6075,,spending,,1
+taxpayer money,2253,,spending,,1
+terrorists,23507,,terrorism,,1
+terrorism,10565,,terrorism,,1
+isis,8049,,terrorism,,1
+terror,5521,,terrorism,,1
+bomb,3102,,terrorism,,1
+bombs,3006,,terrorism,,1
+extremists,2667,,terrorism,,1
+jihad,1938,,terrorism,,1
+jihadists,1100,,terrorism,,1
+qaeda,981,,terrorism,,1
+bomber,658,,terrorism,,1
+bombing,417,,terrorism,,1
+terror group,361,,terrorism,,1
+terror chief,346,,terrorism,,1
+terror attack,298,,terrorism,,1
+terror threat,261,,terrorism,,1
+life,58926,,values,,1
+truth,47978,,values,,1
+lies,31790,,values,,1
+facts,29868,,values,,1
+constitution,28586,,values,,1
+liar,18544,,values,,1
+lives,15331,,values,,1
+love,12488,,values,,1
+culture,8005,,values,,1
+fairness,6338,,values,,1
+courage,5073,,values,,1
+honesty,2049,,values,,1
+conscience,1878,,values,,1
+youth,2690,,youth,,1
+teenager,1743,,youth,,1
+teens,1397,,youth,,1

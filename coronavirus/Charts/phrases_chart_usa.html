@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+    body {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        width: 1400px;
+        height: 2300px;
+        position: relative;
+    }
+
+    svg {
+        width: 100%;
+        height: 100%;
+        position: center;
+    }
+
+    .toolTip {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        position: absolute;
+        display: none;
+        width: auto;
+        height: auto;
+        background: none repeat scroll 0 0 white;
+        border: 0 none;
+        border-radius: 8px 8px 8px 8px;
+        box-shadow: -3px 3px 15px #888888;
+        color: black;
+        font: 12px sans-serif;
+        padding: 5px;
+        text-align: center;
+    }
+
+    text {
+        font: 17px sans-serif;
+        color: white;
+    }
+    text.value {
+        font-size: 100%;
+        fill: black;
+    }
+
+    .axisHorizontal path{
+        fill: none;
+    }
+
+    .axisHorizontal .tick line {
+        stroke-width: 1;
+        stroke: rgba(0, 0, 0, 0.2);
+    }
+
+    .bar {
+        fill: steelblue;
+        fill-opacity: .9;
+    }
+
+    .label {
+        fill: black;
+    }
+
+</style>
+<body>
+
+<script src="https://d3js.org/d3.v3.min.js"></script>
+<script>
+
+    data = [
+   {label:"pandemic", value:34095},
+{label:"coronavirus", value:25255},
+{label:"masks", value:20467},
+{label:"bill gates", value:18887},
+{label:"doctors", value:15496},
+{label:"hospitals", value:13141},
+{label:"wuhan", value:12972},
+{label:"patients", value:12385},
+{label:"outbreak", value:8698},
+{label:"hospital", value:7845},
+{label:"doctor", value:7282},
+{label:"vaccines", value:5104},
+{label:"hydroxychloroquine", value:4864},
+{label:"nurses", value:4426},
+{label:"ventilators", value:4066},
+{label:"ppe", value:3857},
+{label:"flu", value:3592},
+{label:"lockdown", value:3474},
+{label:"relief", value:3304},
+{label:"dr. birx", value:2856},
+{label:"paycheck protection program", value:2481},
+{label:"corona", value:2217},
+{label:"symptoms", value:2211},
+{label:"nurse", value:2104},
+{label:"anthony fauci", value:2013},
+{label:"stimulus", value:1651},
+{label:"fema", value:1535},
+{label:"ventilator", value:1371},
+{label:"covid", value:1260},
+{label:"shortage", value:1101},
+{label:"treatment drug", value:1025},
+{label:"azithromycin", value:996},
+{label:"virus outbreak", value:918},
+{label:"shortages", value:894},
+{label:"health crisis", value:871},
+{label:"bill gates-funded", value:782},
+{label:"test kits", value:759},
+{label:"loan resources", value:750},
+{label:"isolation", value:710},
+{label:"food supply workers", value:659},
+{label:"kits", value:642},
+{label:"#paycheckprotectionprogram", value:611},
+{label:"home order", value:554},
+{label:"infant suffocation", value:553},
+{label:"malaria", value:511},
+{label:"anthony cardillo", value:507},
+{label:"coronavirus test", value:428},
+{label:"fish tank cleaner", value:392},
+{label:"zithromax", value:387},
+{label:"mario salerno", value:375},
+{label:"cloth face", value:361},
+{label:"christi grimm", value:350},
+{label:"mass testing", value:343},
+{label:"covid19", value:333},
+{label:"chloroquine", value:328},
+{label:"world health organisation", value:318},
+{label:"healthcare system", value:308},
+{label:"virus briefings", value:296},
+{label:"microchip technology", value:275},
+{label:"mental health", value:270},
+{label:"epidemiologist gates", value:270},
+{label:"state health depts", value:264},
+{label:"mask stockpile", value:259},
+{label:"colleen smith", value:254},
+{label:"fearmongering hoax", value:239},
+{label:"herd immunity", value:227},
+{label:"doom train", value:208},
+{label:"lock-downs", value:187},
+{label:"5g equipment", value:183},
+{label:"#vaccine", value:175},
+{label:"treatement", value:165},
+{label:"spring breakers", value:157},
+{label:"mass shutdowns", value:153},
+{label:"fatality numbers", value:148},
+{label:"zinc sulfate", value:145},
+{label:"ghebreyesus", value:144},
+{label:"ventilator shortage", value:131},
+{label:"chinavirus", value:129},
+{label:"thomas harvey", value:126},
+{label:"corona patients", value:114},
+{label:"hydroxy", value:110},
+{label:"ppes", value:103},
+{label:"robert redfield", value:97},
+{label:"self-isolate", value:93},
+{label:"nih", value:89},
+{label:"flu samples", value:87},
+{label:"corona deaths", value:86},
+{label:"pandemic relief", value:85},
+{label:"doom fauci", value:85},
+{label:"emergency authorization", value:84},
+{label:"death projections", value:81},
+{label:"population reduction agenda", value:70},
+{label:"zelenko", value:69},
+{label:"sulfate", value:67},
+{label:"nizamuddin", value:67},
+{label:"dr. vladimir", value:67},
+{label:"habib zaidi", value:64},
+{label:"emergency approval", value:58},
+{label:"c19", value:57},
+{label:"hospital exec", value:54},
+{label:"corona-virus", value:52},
+{label:"media over-reaction", value:50},
+{label:"grocery store workers", value:50},
+
+    
+    ];
+
+
+    var div = d3.select("body").append("div").attr("class", "toolTip");
+
+    var axisMargin = 20,
+            margin = 40,
+            valueMargin = 25,
+            width = parseInt(d3.select('body').style('width'), 10),
+            height = parseInt(d3.select('body').style('height'), 10),
+            barHeight = (height-axisMargin-margin*2)* 0.4/data.length,
+            barPadding = (height-axisMargin-margin*2)*0.6/data.length,
+            data, bar, svg, scale, xAxis;
+    var labelWidth = 30;
+
+    max = d3.max(data, function(d) { return d.value+1000; });
+
+    svg = d3.select('body')
+            .append("svg")
+            .attr("width", width)
+            .attr("height", height);
+
+
+    bar = svg.selectAll("g")
+            .data(data)
+            .enter()
+            .append("g");
+
+    bar.attr("class", "bar")
+            .attr("cx",0)
+            .attr("transform", function(d, i) {
+                return "translate(" + margin + "," + (i * (barHeight + barPadding) + barPadding) + ")";
+            });
+
+    bar.append("text")
+            .attr("class", "label")
+            .attr("y", barHeight / 2)
+            .attr("dy", ".35em") //vertical align middle
+            .text(function(d){
+                return d.label;
+            }).each(function() {
+        labelWidth = Math.ceil(Math.max(labelWidth, this.getBBox().width));
+    });
+
+    scale = d3.scale.linear()
+            .domain([0, max])
+            .range([0, width - margin*2 - labelWidth]);
+
+    xAxis = d3.svg.axis()
+            .scale(scale)
+            .tickSize(-height + 2*margin + axisMargin)
+            .orient("bottom");
+
+    bar.append("rect")
+            .attr("transform", "translate("+labelWidth+", 0)")
+            .attr("height", barHeight)
+            .attr("width", function(d){
+                return scale(d.value);
+            });
+
+    bar.append("text")
+            .attr("class", "value")
+            .attr("y", barHeight / 2)
+            .attr("dx", valueMargin + labelWidth) //margin right
+            .attr("dy", ".35em") //vertical align middle
+            .attr("text-anchor", "end")
+            .text(function(d){
+                return d.value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            })
+            .attr("x", function(d){
+                var width = this.getBBox().width;
+                return valueMargin + scale(d.value);
+            });
+
+    bar
+            .on("mousemove", function(d){
+                div.style("left", d3.event.pageX+10+"px");
+                div.style("top", d3.event.pageY-25+"px");
+                div.style("display", "inline-block");
+                div.html((d.label)+"<br>"+(d.value)+"%");
+            });
+    bar
+            .on("mouseout", function(d){
+                div.style("display", "none");
+            });
+
+    svg.insert("g",":first-child")
+            .attr("class", "axisHorizontal")
+            .attr("transform", "translate(" + (margin + labelWidth) + ","+ (height - axisMargin - margin)+")")
+            .call(xAxis);
+
+</script>
+</body>

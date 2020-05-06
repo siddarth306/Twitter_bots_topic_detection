@@ -1,0 +1,335 @@
+Phrase,Freq,Country,#hashtag
+austria,639,austria,austria
+prague,335,czech,czech
+czech,335,czech,czech
+denmark,1207,denmark,denmark
+greenland,297,denmark,denmark
+copenhagen,200,denmark,denmark
+estonia,369,estonia,estonia
+kosovo,361,eu,balkans
+serbia,306,eu,balkans
+albania,193,eu,balkans
+belgium,1063,eu,belgium
+eu,30347,eu,eu
+brussels,4097,eu,eu
+e.u.,251,eu,eu
+#eu,203,eu,eu
+europe,9652,eu,europe
+greece,1449,eu,fp-greece
+italy,3003,eu,fp-italy
+finland,832,finland,finland
+france,13130,france,france
+paris,4924,france,france
+germany,8038,germany,germany
+berlin,1273,germany,germany
+munich,372,germany,germany
+athens,289,greece,greece
+hungary,927,hungary,hungary
+budapest,781,hungary,hungary
+rome,1085,italy,italy
+venice,287,italy,italy
+florence,218,italy,italy
+latvia,791,latvia,latvia
+netherlands,980,netherlands,netherlands
+dutch,203,netherlands,netherlands
+amsterdam,194,netherlands,netherlands
+norway,1214,norway,norway
+poland,1928,poland,poland
+portugal,553,portugal,portugal
+romania,295,romania,romania
+spain,1793,spain,spain
+barcelona,377,spain,spain
+catalonia,322,spain,spain
+sweden,7828,sweden,sweden
+stockholm,999,sweden,sweden
+switzerland,2136,switzerland,sweden
+geneva,273,switzerland,switzerland
+britain,17327,uk,
+london,15888,uk,
+scotland,10866,uk,
+england,6539,uk,
+manchester,5330,uk,
+ireland,4937,uk,
+uk,4877,uk,
+rotherham,2761,uk,
+westminster,1993,uk,
+cambridge,1950,uk,
+sussex,1675,uk,
+glasgow,1293,uk,
+leeds,1270,uk,
+birmingham,1270,uk,
+yorkshire,1247,uk,
+liverpool,1058,uk,
+rochdale,992,uk,
+telford,787,uk,
+chelsea,743,uk,
+oxford,617,uk,
+dublin,540,uk,
+cardiff,539,uk,
+edinburgh,529,usa,
+leicester,344,uk,
+belfast,340,uk,
+wales,332,uk,
+newcastle,322,uk,
+huddersfield,321,uk,
+islington,276,uk,
+london,274,uk,
+salford,268,uk,
+windsor,265,uk,
+southampton,213,uk,
+wrexham,205,uk,
+derbyshire,185,uk,
+essex,181,uk,
+afghanistan,8011,usa,fp-afghanistan
+canada,20265,usa,fp-canada
+alberta,1555,usa,fp-canada
+china,33007,usa,fp-china
+beijing,1118,usa,fp-china
+#china,324,usa,fp-china
+shanghai,246,usa,fp-china
+cuba,1647,usa,fp-cuba
+iran,86244,usa,fp-iran
+tehran,8772,usa,fp-iran
+baghdad,2678,usa,fp-iraq
+japan,2655,usa,fp-japan
+tokyo,471,usa,fp-japan
+korea,3634,usa,fp-korea
+north korea,183,,fp-korea
+mexico,9069,usa,fp-mexico
+saudi arabia,3895,usa,fp-saudi
+arabia,1169,usa,fp-saudi
+venezuela,3586,usa,fp-southamerica
+honduras,1290,usa,fp-southamerica
+guam,1231,usa,fp-southamerica
+bolivia,1230,usa,fp-southamerica
+guatemala,1185,usa,fp-southamerica
+brazil,737,usa,fp-southamerica
+chile,640,usa,fp-southamerica
+argentina,394,usa,fp-southamerica
+jamaica,394,usa,fp-southamerica
+costa rica,355,usa,fp-southamerica
+bolivian,205,usa,fp-southamerica
+salvador,185,usa,fp-southamerica
+chilean,180,usa,fp-southamerica
+ukraine,58177,usa,fp-ukraine
+san juan,486,usa,PuertoRico
+afghanistan,8011,usa,fp-afghanistan
+canada,20265,usa,fp-canada
+alberta,1555,usa,fp-canada
+china,33007,usa,fp-china
+beijing,1118,usa,fp-china
+#china,324,usa,fp-china
+shanghai,246,usa,fp-china
+cuba,1647,usa,fp-cuba
+iran,86244,usa,fp-iran
+tehran,8772,usa,fp-iran
+baghdad,2678,usa,fp-iraq
+japan,2655,usa,fp-japan
+tokyo,471,usa,fp-japan
+korea,3634,usa,fp-korea
+north korea,183,usa,fp-korea
+mexico,9069,usa,fp-mexico
+saudi arabia,3895,usa,fp-saudi
+arabia,1169,usa,fp-saudi
+venezuela,3586,usa,fp-southamerica
+honduras,1290,usa,fp-southamerica
+guam,1231,usa,fp-southamerica
+bolivia,1230,usa,fp-southamerica
+guatemala,1185,usa,fp-southamerica
+brazil,737,usa,fp-southamerica
+chile,640,usa,fp-southamerica
+argentina,394,usa,fp-southamerica
+jamaica,394,usa,fp-southamerica
+costa rica,355,usa,fp-southamerica
+bolivian,205,usa,fp-southamerica
+salvador,185,usa,fp-southamerica
+chilean,180,usa,fp-southamerica
+ukraine,58177,usa,fp-ukraine
+san juan,486,usa,PuertoRico
+nj,3532,usa,
+va,3472,usa,
+wisconsin,3426,usa,
+chicago,3344,usa,
+georgia,3260,usa,
+illinois,3260,usa,
+ohio,3255,usa,
+dc,3193,usa,
+carolina,2936,usa,
+ny,2624,usa,
+seattle,2475,usa,
+houston,2307,usa,
+alabama,2228,usa,
+kentucky,2153,usa,
+la,2116,usa,
+boston,2103,usa,
+baltimore,2067,usa,
+austin,2015,usa,
+arkansas,1871,usa,
+jacksonville,1841,usa,
+atlanta,1783,usa,
+detroit,1708,usa,
+vegas,1667,usa,
+tennessee,1656,usa,
+hampshire,1574,usa,
+oregon,1571,usa,
+washington dc,1514,usa,
+philadelphia,1499,usa,
+oklahoma,1459,usa,
+kansas,1437,usa,
+manhattan,1421,usa,
+colorado,1419,usa,
+hawaii,1404,usa,
+miami,1384,usa,
+indiana,1239,usa,
+massachusetts,1224,usa,
+u.s,1016,usa,
+charlottesville,999,usa,
+d.c.,971,usa,
+cali,953,usa,
+brooklyn,942,usa,
+louisiana,935,usa,
+nc,922,usa,
+stanford,904,usa,
+maryland,891,usa,
+sf,891,usa,
+dallas,885,usa,
+alaska,877,usa,
+sacramento,867,usa,
+capitol hill,815,usa,
+wa,786,usa,
+columbia,753,usa,
+blackburn,752,usa,
+san diego,750,usa,
+orleans,744,usa,
+missouri,721,usa,
+bradford,713,usa,
+mississippi,709,usa,
+san fran,654,usa,
+phoenix,640,usa,
+nevada,622,usa,
+texans,543,usa,
+indians,515,usa,
+nebraska,435,usa,
+banana republic,394,usa,
+atlantic,386,usa,
+puerto rican,385,usa,
+calgary,371,usa,
+oakland,370,usa,
+washington d.c.,344,usa,
+cleveland,344,usa,
+arlington,343,usa,
+nottingham,333,usa,
+l.a.,330,usa,
+nashville,324,usa,
+huntington,313,usa,
+wyoming,304,usa,
+san antonio,285,usa,
+orlando,282,usa,
+brighton,282,usa,
+tucson,280,usa,
+pittsburgh,272,usa,
+dakota,267,usa,
+cincinnati,259,usa,
+st. louis,252,usa,
+albuquerque,220,usa,
+usc,214,usa,
+virgina,212,usa,
+usa usa,212,usa,
+honolulu,211,usa,
+angeles,210,usa,
+samoa,203,usa,
+orgeron,200,usa,
+hudson,198,usa,
+az,194,usa,
+georgetown,185,usa,
+africa,4493,eu,fp-africa
+armenian,273,eu,fp-armenia
+australia,15102,eu,fp-australia
+sydney,1944,eu,fp-australia
+myanmar,288,eu,fp-burma
+egypt,1674,eu,fp-egypt
+ethiopia,344,eu,fp-ethiopia
+india,9857,eu,fp-india
+delhi,3163,eu,fp-india
+maharashtra,430,eu,fp-india
+karnataka,300,eu,fp-india
+assam,299,eu,fp-india
+gujarat,292,eu,fp-india
+hyderabad,256,eu,fp-india
+indonesia,514,eu,fp-indonesia
+israel,20906,eu,fp-israel
+jerusalem,3213,eu,fp-israel
+gaza,2469,eu,fp-israel
+palestine,2363,eu,fp-israel
+bethlehem,565,eu,fp-israel
+jordan,2793,eu,fp-jordan
+benghazi,6970,eu,fp-libya
+libya,4855,eu,fp-libya
+#benghazi,296,eu,fp-libya
+qatar,2479,eu,fp-me
+kuwait,481,eu,fp-me
+beirut,288,eu,fp-me
+nigeria,4021,eu,fp-nigeria
+pakistan,6400,eu,fp-pakistan
+singapore,423,eu,fp-singapore
+sudan,466,eu,fp-sudan
+syria,6955,eu,fp-syria
+#syria,668,eu,fp-syria
+turkey,3638,eu,fp-turkey
+vietnam,1897,eu,fp-vietnam
+yemen,1718,eu,fp-yemen
+moscow,1000,eu,russia
+ussr,788,eu,russia
+russia russia russia,269,eu,russia
+spanish,821,eu,spain
+tx,12846,usa,
+utah,3588,usa,
+harvard,3567,usa,
+obama,83980,usa,democrat
+pelosi,73331,usa,democrat
+president trump,68977,usa,republican
+nancy pelosi,50049,usa,democrat
+adam schiff,49692,usa,democrat
+fbi,48446,usa,fbi
+joe biden,34213,usa,democrat
+bernie,29412,usa,democrat
+clinton,28916,usa,democrat
+bernie sanders,25822,usa,democrat
+boris johnson,23410,uk,conservative
+hillary clinton,18861,usa,democrat
+donald trump,17390,usa,republican
+iowa,14632,usa,
+florida,14448,usa,
+potus,13036,usa,trump
+jeremy corbyn,11480,uk,labour
+elizabeth warren,11354,usa,democrat
+jerry nadler,9022,usa,democrat
+john kerry,7227,usa,democrat
+rudy giuliani,6988,usa,republican
+lindsey graham,6282,usa,republican
+milwaukee,6251,usa,
+meghan markle,6199,uk,royalty
+michigan,6047,usa,
+james comey,5396,usa,fbi
+jeffrey epstein,4923,usa,justice
+nick sandmann,4559,usa,gun control
+obamas,4493,usa,democrat
+laura loomer,4288,usa,far-right
+john brennan,4258,usa,intelligence
+kyle jurek,4209,usa,far-left
+clintons,3993,usa,democrat
+arizona,3719,usa,
+portland,3706,usa,
+joe bidens,3617,usa,democrat
+pentagon,3580,usa,defense
+mike bloomberg,3021,usa,democrat
+christopher wray,3019,usa,fbi
+tucker carlson,2961,usa,cons-media
+ted cruz,2960,usa,republican
+harvey weinstein,2952,usa,rape
+baghdad,2678,usa,fp-iraq
+barack obama,2509,usa,democrat
+christopher steele,2415,uk,intel
+andrew mccabe,2378,usa,fbi
+corbyn,2228,uk,labour
+emily thornberry,2215,uk,labour
